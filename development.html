@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- Basic -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>MZmine 2</title>
+		<meta name="description" content="MZmine 2 is an open-source software for mass spectrometry data processing.">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="favicon.ico" />
+		
+		<!-- Web Fonts  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+		
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css" media="screen">
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css" media="screen">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" media="screen">
+		
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css" />
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-animate.css" />
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="css/skins/default.css" />
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+		
+		<!--[if IE]>
+			<link rel="stylesheet" href="css/ie.css">
+		<![endif]-->
+
+		<!--[if lte IE 8]>
+			<script src="vendor/respond/respond.js"></script>
+			<script src="vendor/excanvas/excanvas.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<div class="body">
+			<header id="header">
+				<div class="container">
+					<h1 class="logo">
+						<a href="/">
+							<img alt="QC" width="427" height="99" class="logo-normal" data-sticky-width="237" data-sticky-height="55" src="img/logo.png">
+							<img alt="QC" width="237" height="55" class="logo-sticky" src="img/logo.png">
+						</a>
+					</h1>
+					<button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
+						<i class="fa fa-bars"></i>
+					</button>
+				</div>
+				<div class="navbar-collapse nav-main-collapse collapse">
+					<div class="container">
+						<nav class="nav-main mega-menu">
+							<ul class="nav nav-pills nav-main" id="mainMenu">
+								<li>
+									<a href="/">Home</a>
+								</li>
+								<li class="dropdown mega-menu-item mega-menu-fullwidth">
+									<a  class="dropdown-toggle" href="features.html">
+										Features
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<div class="mega-menu-content">
+												<div class="row">
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">General Features</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#FileFormats">Raw data file formats</a></li>
+																	<li><a href="features.html#ImportExport">Import and Export</a></li>
+																	<li><a href="features.html#Batch">Batch Processing</a></li>
+																</ul>
+																<br/>
+																<span class="mega-menu-sub-title">Raw Data Methods</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#RawFiltering">Filtering & Smoothing</a></li>
+																	<li><a href="features.html#RawDetection">Peak Detection</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Peak List Methods</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#GapFilling">Gap Filling</a></li>
+																	<li><a href="features.html#Isotopes">Isotope Detection</a></li>
+																	<li><a href="features.html#Filtering">Filtering</a></li>
+																	<li><a href="features.html#Alignment">Alignment</a></li>
+																	<li><a href="features.html#Normalization">Normalization</a></li>
+																	<li><a href="features.html#Identification">Identification</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Statistical Analysis</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#CV">CV Plot</a></li>
+																	<li><a href="features.html#Logratio">Logratio Analysis</a></li>
+																	<li><a href="features.html#PCA">Principal Component Analysis (PCA)</a></li>
+																	<li><a href="features.html#CDA">Curvilinear Distant Analysis (CDA)</a></li>
+																	<li><a href="features.html#SammonsProjection">Sammon's Projection</a></li>
+																	<li><a href="features.html#Clustering">Clustering</a></li>
+																	<li><a href="features.html#Heatmap">Heat Map Plot</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Visualization</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#TIC_XIC">TIC/XIC Visualizer</a></li>
+																	<li><a href="features.html#Spectra">Spectra Visualizer</a></li>
+																	<li><a href="features.html#2D">2D Visualizer</a></li>
+																	<li><a href="features.html#3D">3D Visualizer</a></li>
+																	<li><a href="features.html#NeutralLoss">Neutral Loss Visualizer</a></li>
+																	<li><a href="features.html#Scatter">Scatter Plot</a></li>
+																	<li><a href="features.html#Histogram">Histogram Plot</a></li>
+																	<li><a href="features.html#PeakIntensity">Peak Intensity Plot</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>								
+								<li class="dropdown">
+									<a class="dropdown-toggle" href="download.html">
+										Download
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="download.html">Download</a></li>
+										<li><a href="changelog.html">Changelog</a></li>
+									</ul>
+								</li>
+								<li class="active">
+									<a href="development.html">Development</a>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" href="support.html">
+										Support
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="support.html">Support</a></li>
+										<li><a href="documentation.html">Documentation</a></li>
+										<li><a href="support.html#Issues">Issues</a></li>
+										<li><a href="support.html#Suggestions">Suggestions</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="contributors.html">Contributors</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<div role="main" class="main">
+
+				
+				<section class="page-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<h2>Development</h2>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="container">
+					<h2>MZmine 2 <strong>Architecture</strong></h2>
+					MZmine 2 is developed using Java technology, therefore it is completely platform independent, requiring only Java runtime for running. One of the main design goals is to keep a strict separation between the application core and modules for data processing and visualization. Development of new modules is very easy and straightforward. Mass spectrometry researchers are welcome to implement their favorite algorithms and data processing methods using MZmine 2 framework. If you would like to contribute in any way, please send an email to the developers e-mail list: <a href="mailto:mzmine-devel@lists.sourceforge.net">mzmine-devel@lists.sourceforge.net</a>.
+					<br/><br/>
+					<p style="text-align:center;"><img src="img/architecture.png" alt="Architecture" style="width:80%"></p>
+					<br/><br/>
+					
+					<h2>Source <strong>Code</strong></h2>
+					The MZmine 2 source code is available from the <a href="https://github.com/mzmine/mzmine2">GitHub repository</a>. You are welcome to redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either <a href="http://www.gnu.org/licenses/gpl-2.0.html" target="_blank">version 2</a> of the License, or (at your option) any <a href="http://www.gnu.org/licenses/gpl.html" target="_blank">later version</a>.
+					<br/><br/>
+					
+					<h2>How To <strong>Contribute</strong></h2>
+					<p>
+					There are several steps you need to follow in order to contribute your code to MZmine. If you are not familiar with <a href="http://www.github.com" target="_blank">GitHub</a>, this might seem cumbersome at first, but you will surely appreciate the power of this <a href="https://guides.github.com/introduction/flow/">workflow</a> later. Steps 1-3 only need to be performed once, when you make your first contribution.
+					</p>
+
+					<ol>
+					<li><a href="https://github.com/join">Create</a> a personal account on GitHub.</li>
+					<li><a href="https://help.github.com/articles/fork-a-repo/">Fork the MZmine repository</a>. Now you have created your own, personal copy of MZmine at GitHub.</li>
+					<li><a href="https://help.github.com/articles/fork-a-repo/#step-2-create-a-local-clone-of-your-fork">Clone</a> the newly forked git repository (https://github.com/<strong>YOUR-USERNAME</strong>/mzmine2.git) to your PC, either using the <em>git clone</em> command, or using your favorite <a href="http://en.wikibooks.org/wiki/Java_Programming/Java_IDEs">IDE</a>. Now you have created a local copy of your own GitHub repository. This copy will contain the <em>master</em> branch.</li> 
+					<li>In your local, cloned repository, <a href="http://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging">create and check out a new branch</a> for the feature or change that you are planning to work on.</li>
+					<li>Perform your development on this new branch, and <a href="http://git-scm.com/docs/git-commit">commit</a> your changes with meaningful commit messages (multiple commits are fine). Note that all commits happen only within your local git repository.</li>
+					<li>When you are finished, <a href="https://help.github.com/articles/pushing-to-a-remote/">push your branch</a> to your on-line repository on GitHub.</li>
+					<li>Go to the website of your repository on GitHub and <a href="https://help.github.com/articles/using-pull-requests/#initiating-the-pull-request">create a pull request</a> to the original MZmine repository's <em>master</em> branch. We will review your pull request and provide comments. You can update your code and push new commits into the same branch of your own GitHub repository. These commits will be automatically added to the pull request.</li>
+					<li>When everyone is happy, we will merge your pull request and you can <a href="https://help.github.com/articles/deleting-unused-branches/">delete your branch</a>.</li>
+					<li>You can keep your local repository up-to-date with the MZmine development branch by <a href="https://help.github.com/articles/configuring-a-remote-for-a-fork/">adding</a> the official MZmine repository as a new <em>remote</em> repository and <a href="https://help.github.com/articles/syncing-a-fork/">fetching changes</a> from there.</li>
+					</ol>
+
+					<p>For more information, please check the official GitHub's <a href="https://help.github.com">documentation</a> or ask for help through our mailing list <a href="mailto:mzmine-devel@lists.sourceforge.net">mzmine-devel@lists.sourceforge.net</a>.
+					<br/>
+					Please also check the <a href="documentation.html">Documentation</a> section for development tutorials.
+					</p>
+
+					<br/>
+					
+					<h2>Libraries used by <strong>MZmine 2</strong></h2>
+					<ul>
+					<li><a href="https://xmlgraphics.apache.org/commons/" target="_blank">Apache XML Graphics</a> - EPS image export
+					<li><a href="http://cdk.sourceforge.net" target="_blank">Chemistry Development Kit</a> - Isotope pattern and molecular calculations</li>
+					<li><a href="http://java.freehep.org/" target="_blank">Freehep</a> - EMF image export
+					<li><a href="https://code.google.com/p/guava-libraries" target="_blank">Google Guava</a> - Utility classes</li>
+					<li><a href="http://javahelp.dev.java.net" target="_blank">JavaHelp</a> - Help system</li>
+					<li><a href="http://jchempaint.github.com" target="_blank">JChemPaint</a> - 2D molecule visualization</li>
+					<li><a href="http://www.jfree.org/jfreechart/" target="_blank">JFreeChart</a> - TIC, Spectra and 2D visualizers</li>
+					<li><a href="http://jmol.sourceforge.net" target="_blank">JMol</a> - 3D molecule visualization</li>
+					<li><a href="https://code.google.com/p/jmzml" target="_blank">jmzml</a> - mzML file import</li>
+					<li><a href="https://code.google.com/p/mztab/wiki/jmzTab" target="_blank">jmzTab</a> - mzTab file import and export</li>
+					<li><a href="http://www.unidata.ucar.edu/software/netcdf-java/" target="_blank">NetCDF-Java</a> - NetCDF file import</li>
+					<li><a href="http://www.ssec.wisc.edu/~billh/visad.html" target="_blank">VisAD</a> - 3D visualizer</li>
+					<li><a href="http://www.cs.waikato.ac.nz/ml/weka/" target="_blank">WEKA</a> - Clustering and other machine learning algorithms</li>
+					</ul>
+					<br/>
+				</div>
+				
+			</div>
+
+			<footer class="short" id="footer">
+			<div class="footer-copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p>© Copyright 2015. All Rights Reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			</footer>
+			
+		</div>
+
+		<!-- Vendor -->
+		<script src="vendor/jquery/jquery.js"></script>
+		<script src="vendor/bootstrap/bootstrap.js"></script>
+		<script src="vendor/common/common.js"></script>
+		<script src="vendor/owlcarousel/owl.carousel.js"></script>
+		<script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="admin/assets/javascripts/theme.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+		
+		<!-- Google Analytics -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-63013892-1']);
+			_gaq.push(['_trackPageview']);
+		
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		
+	</body>
+</html>

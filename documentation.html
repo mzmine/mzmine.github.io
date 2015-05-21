@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- Basic -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>MZmine 2</title>
+		<meta name="description" content="MZmine 2 is an open-source software for mass spectrometry data processing.">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="favicon.ico" />
+		
+		<!-- Web Fonts  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+		
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css" media="screen">
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css" media="screen">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" media="screen">
+		
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css" />
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-animate.css" />
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="css/skins/default.css" />
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+		
+		<!--[if IE]>
+			<link rel="stylesheet" href="css/ie.css">
+		<![endif]-->
+
+		<!--[if lte IE 8]>
+			<script src="vendor/respond/respond.js"></script>
+			<script src="vendor/excanvas/excanvas.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<div class="body">
+			<header id="header">
+				<div class="container">
+					<h1 class="logo">
+						<a href="/">
+							<img alt="QC" width="427" height="99" class="logo-normal" data-sticky-width="237" data-sticky-height="55" src="img/logo.png">
+							<img alt="QC" width="237" height="55" class="logo-sticky" src="img/logo.png">
+						</a>
+					</h1>
+					<button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
+						<i class="fa fa-bars"></i>
+					</button>
+				</div>
+				<div class="navbar-collapse nav-main-collapse collapse">
+					<div class="container">
+						<nav class="nav-main mega-menu">
+							<ul class="nav nav-pills nav-main" id="mainMenu">
+								<li>
+									<a href="/">Home</a>
+								</li>
+								<li class="dropdown mega-menu-item mega-menu-fullwidth">
+									<a  class="dropdown-toggle" href="features.html">
+										Features
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<div class="mega-menu-content">
+												<div class="row">
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">General Features</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#FileFormats">Raw data file formats</a></li>
+																	<li><a href="features.html#ImportExport">Import and Export</a></li>
+																	<li><a href="features.html#Batch">Batch Processing</a></li>
+																</ul>
+																<br/>
+																<span class="mega-menu-sub-title">Raw Data Methods</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#RawFiltering">Filtering & Smoothing</a></li>
+																	<li><a href="features.html#RawDetection">Peak Detection</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Peak List Methods</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#GapFilling">Gap Filling</a></li>
+																	<li><a href="features.html#Isotopes">Isotope Detection</a></li>
+																	<li><a href="features.html#Filtering">Filtering</a></li>
+																	<li><a href="features.html#Alignment">Alignment</a></li>
+																	<li><a href="features.html#Normalization">Normalization</a></li>
+																	<li><a href="features.html#Identification">Identification</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Statistical Analysis</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#CV">CV Plot</a></li>
+																	<li><a href="features.html#Logratio">Logratio Analysis</a></li>
+																	<li><a href="features.html#PCA">Principal Component Analysis (PCA)</a></li>
+																	<li><a href="features.html#CDA">Curvilinear Distant Analysis (CDA)</a></li>
+																	<li><a href="features.html#SammonsProjection">Sammon's Projection</a></li>
+																	<li><a href="features.html#Clustering">Clustering</a></li>
+																	<li><a href="features.html#Heatmap">Heat Map Plot</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Visualization</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#TIC_XIC">TIC/XIC Visualizer</a></li>
+																	<li><a href="features.html#Spectra">Spectra Visualizer</a></li>
+																	<li><a href="features.html#2D">2D Visualizer</a></li>
+																	<li><a href="features.html#3D">3D Visualizer</a></li>
+																	<li><a href="features.html#NeutralLoss">Neutral Loss Visualizer</a></li>
+																	<li><a href="features.html#Scatter">Scatter Plot</a></li>
+																	<li><a href="features.html#Histogram">Histogram Plot</a></li>
+																	<li><a href="features.html#PeakIntensity">Peak Intensity Plot</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>								
+								<li class="dropdown">
+									<a class="dropdown-toggle" href="download.html">
+										Download
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="download.html">Download</a></li>
+										<li><a href="changelog.html">Changelog</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="development.html">Development</a>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" href="support.html">
+										Support
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="support.html">Support</a></li>
+										<li><a href="documentation.html">Documentation</a></li>
+										<li><a href="support.html#Issues">Issues</a></li>
+										<li><a href="support.html#Suggestions">Suggestions</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="contributors.html">Contributors</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<div role="main" class="main">
+
+				
+				<section class="page-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="breadcrumb">
+									<li><a href="support.html">Support</a></li>
+									<li class="active">Documentation</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="container">
+					<h2><strong>User</strong> Documentation</h2>
+					The following documentation is available for getting familiar with MZmine 2 and its architecture. If you have further questions regarding the usage or development of MZmine, please join the developers' <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=mzmine-devel" target="_blank">mailing list</a>.
+					<br/><br/>
+					<ul>
+
+					<li>
+						<a href="https://docs.google.com/document/d/1JtdNwp1y6wz_Boz8qVGESH-kSrMhcGaJWR18iGmhstU/" target="_blank"><strong>MZmine 2 manual</strong></a>&nbsp;&nbsp;<i class="fa fa-file-text-o" style="font-size:20px;color:#0088cc;"></i><br/>
+						This manual covers the general functionality of MZmine 2 including installation, batch mode and data processing.
+					</li><br/>
+
+					<li>
+						<a href="http://www.youtube.com/watch?v=VS_Zpyl5chQ" target="_blank"><strong>Video Tutorial</strong></a>&nbsp;&nbsp;<i class="fa fa-youtube" style="font-size:20px;color:#0088cc;"></i><br/>
+						This animated tutorial created by Sandra Castillo introduces the basic features of MZmine 2, including raw data import, peak detection, visualization of results etc.
+					</li><br/>
+
+					<li>
+						<a href="MZmine_tutorial.pdf" target="_blank"><strong>Usage tutorial</strong></a>&nbsp;&nbsp;<i class="fa fa-file-pdf-o" style="font-size:20px;color:#0088cc;"></i><br/>
+						   This tutorial written by Mark Earll covers the data processing features of MZmine 2.
+					</li><br/>
+					</ul>
+
+					<h2><strong>Developer</strong> Documentation</h2>
+					<ul>
+					<li>
+						<a href="https://docs.google.com/document/pub?id=1P2Jy3IROmBT2dIggy9u5IK0rCFpT2HHOk1l_XTIrnps"><strong>How to start MZmine 2 development</strong></a><br/>
+						This tutorial shows how to setup the development environment using the Eclipse IDE and how to start developing modules for MZmine 2.
+					</li><br/>
+
+					<li>
+						<a href="module_tutorial.html"><strong>Module development tutorial</strong></a><br/>
+						This (slighly outdated) tutorial is intended for researchers who wish to implement their own data processing methods within the MZmine 2 framework. It covers the development of a simple MZmine 2 module.
+					</li>
+
+					</ul>
+					
+					<br/>
+				</div>
+				
+			</div>
+
+			<footer class="short" id="footer">
+			<div class="footer-copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p>© Copyright 2015. All Rights Reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			</footer>
+			
+		</div>
+
+		<!-- Vendor -->
+		<script src="vendor/jquery/jquery.js"></script>
+		<script src="vendor/bootstrap/bootstrap.js"></script>
+		<script src="vendor/common/common.js"></script>
+		<script src="vendor/owlcarousel/owl.carousel.js"></script>
+		<script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="admin/assets/javascripts/theme.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+		
+		<!-- Google Analytics -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-63013892-1']);
+			_gaq.push(['_trackPageview']);
+		
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		
+	</body>
+</html>

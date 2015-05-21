@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- Basic -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>MZmine 2</title>
+		<meta name="description" content="MZmine 2 is an open-source software for mass spectrometry data processing.">
+		<meta name="author" content="Thomas F. Dyrlund">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="favicon.ico" />
+		
+		<!-- Web Fonts  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+		
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css" media="screen">
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css" media="screen">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" media="screen">
+		
+		<!-- Syntax highlighter -->
+		<script type="text/javascript" src="vendor/syntaxhighlighter/scripts/shCore.js"></script>
+		<script type="text/javascript" src="vendor/syntaxhighlighter/scripts/shBrushJava.js"></script>
+		<link type="text/css" rel="stylesheet" href="vendor/syntaxhighlighter/styles/shCoreDefault.css"/>
+		<script type="text/javascript">SyntaxHighlighter.all();</script>
+		
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css" />
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-animate.css" />
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="css/skins/default.css" />
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+		
+		<!--[if IE]>
+			<link rel="stylesheet" href="css/ie.css">
+		<![endif]-->
+
+		<!--[if lte IE 8]>
+			<script src="vendor/respond/respond.js"></script>
+			<script src="vendor/excanvas/excanvas.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<div class="body">
+			<header id="header">
+				<div class="container">
+					<h1 class="logo">
+						<a href="/">
+							<img alt="QC" width="427" height="99" class="logo-normal" data-sticky-width="237" data-sticky-height="55" src="img/logo.png">
+							<img alt="QC" width="237" height="55" class="logo-sticky" src="img/logo.png">
+						</a>
+					</h1>
+					<button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
+						<i class="fa fa-bars"></i>
+					</button>
+				</div>
+				<div class="navbar-collapse nav-main-collapse collapse">
+					<div class="container">
+						<nav class="nav-main mega-menu">
+							<ul class="nav nav-pills nav-main" id="mainMenu">
+								<li>
+									<a href="/">Home</a>
+								</li>
+								<li class="dropdown mega-menu-item mega-menu-fullwidth">
+									<a  class="dropdown-toggle" href="features.html">
+										Features
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<div class="mega-menu-content">
+												<div class="row">
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">General Features</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#FileFormats">Raw data file formats</a></li>
+																	<li><a href="features.html#ImportExport">Import and Export</a></li>
+																	<li><a href="features.html#Batch">Batch Processing</a></li>
+																</ul>
+																<br/>
+																<span class="mega-menu-sub-title">Raw Data Methods</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#RawFiltering">Filtering & Smoothing</a></li>
+																	<li><a href="features.html#RawDetection">Peak Detection</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Peak List Methods</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#GapFilling">Gap Filling</a></li>
+																	<li><a href="features.html#Isotopes">Isotope Detection</a></li>
+																	<li><a href="features.html#Filtering">Filtering</a></li>
+																	<li><a href="features.html#Alignment">Alignment</a></li>
+																	<li><a href="features.html#Normalization">Normalization</a></li>
+																	<li><a href="features.html#Identification">Identification</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Statistical Analysis</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#CV">CV Plot</a></li>
+																	<li><a href="features.html#Logratio">Logratio Analysis</a></li>
+																	<li><a href="features.html#PCA">Principal Component Analysis (PCA)</a></li>
+																	<li><a href="features.html#CDA">Curvilinear Distant Analysis (CDA)</a></li>
+																	<li><a href="features.html#SammonsProjection">Sammon's Projection</a></li>
+																	<li><a href="features.html#Clustering">Clustering</a></li>
+																	<li><a href="features.html#Heatmap">Heat Map Plot</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Visualization</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#TIC_XIC">TIC/XIC Visualizer</a></li>
+																	<li><a href="features.html#Spectra">Spectra Visualizer</a></li>
+																	<li><a href="features.html#2D">2D Visualizer</a></li>
+																	<li><a href="features.html#3D">3D Visualizer</a></li>
+																	<li><a href="features.html#NeutralLoss">Neutral Loss Visualizer</a></li>
+																	<li><a href="features.html#Scatter">Scatter Plot</a></li>
+																	<li><a href="features.html#Histogram">Histogram Plot</a></li>
+																	<li><a href="features.html#PeakIntensity">Peak Intensity Plot</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>								
+								<li class="dropdown">
+									<a class="dropdown-toggle" href="download.html">
+										Download
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="download.html">Download</a></li>
+										<li><a href="changelog.html">Changelog</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="development.html">Development</a>
+								</li>
+								<li class="dropdown active">
+									<a href="support.html">
+									Support
+									<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="support.html">Support</a></li>
+										<li><a href="documentation.html">Documentation</a></li>
+										<li><a href="support.html#Issues">Issues</a></li>
+										<li><a href="support.html#Suggestions">Suggestions</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="contributors.html">Contributors</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<div role="main" class="main">
+
+				
+				<section class="page-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="breadcrumb">
+									<li><a href="support.html">Support</a></li>
+									<li class="active">Module Development Tutorial</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="container">
+					<h2>Module <strong>Development Tutorial</strong></h2>
+					Let's demonstrate MZmine 2 module development by making a simple centroiding module. This module will take a continuous mode spectra represented by a continuous stream of data points which form m/z peaks, and convert it to centroided spectra, where each m/z peak is represened by a single data point (m/z and intensity pair). The algorithm used for centroiding is very simple: the intensity of all data points is summed over certain m/z interval and replaced with a single (centroid) data point. The width of this m/z interval will be the only parameter of our method.
+					<br/><br/>
+					
+					We need to create 3 Java classes:<br/>
+					<ul>
+						<li><a href="#Centroider"><strong>Centroider.java</strong></a> - this class is the core of the module and implements the MZmineModule interface</li>
+						<li><a href="#CentroiderParameters"><strong>CentroiderParameters.java</strong></a> - this class contains the parameters of our method and implements the StorableParameterSet interface</li>
+						<li><a href="#CentroiderTask"><strong>CentroiderTask.java</strong></a> - this class contains the actual data processing logic (executed by the task controller) and implements the Task interface</li>
+					</ul>
+
+					Once compiled, the module has to be installed into the conf/config.xml file, for example by adding the following line in the &lt;modules&gt; section:
+					<br/>
+					
+					<script type="syntaxhighlighter" class="brush: java">
+					<![CDATA[
+					<modules>
+					  <module class="net.sf.mzmine.modules.centroider.Centroider" />
+					  ...
+					</modules>
+					]]>
+					</script>
+					The commented source codes of these three classes follow:
+					<br/><br/>
+					
+					<span class="anchor" id="Centroider"></span>
+					<h2>Centroider.java source</h2>
+					<script type="syntaxhighlighter" class="brush: java">
+					<![CDATA[
+					package net.sf.mzmine.modules.centroider;
+
+					import java.awt.event.ActionEvent;
+					import java.awt.event.ActionListener;
+					import java.awt.event.KeyEvent;
+
+					import net.sf.mzmine.data.ParameterSet;
+					import net.sf.mzmine.data.RawDataFile;
+					import net.sf.mzmine.desktop.Desktop;
+					import net.sf.mzmine.desktop.MZmineMenu;
+					import net.sf.mzmine.main.MZmineCore;
+					import net.sf.mzmine.main.MZmineModule;
+					import net.sf.mzmine.taskcontrol.Task;
+					import net.sf.mzmine.util.dialogs.ExitCode;
+
+					import net.sf.mzmine.util.dialogs.ParameterSetupDialog;
+
+					/**
+					 * This code is a demonstration of MZmine 2 module development.
+					 * It represents a simple module for converting continuous
+					 * (profile) mode data into centroided data. This class is the
+					 * main class of the module, which implements MZmineModule
+					 * interface.
+					 */
+					public class Centroider implements ActionListener, MZmineModule {
+
+						private CentroiderParameters parameters;
+
+						/**
+						 * Module initialization. This method is called only once,
+						 * during MZmine 2 startup sequence.
+						 */
+						public void initModule() {
+
+							// Create a new instance of our parameters class
+							parameters = new CentroiderParameters();
+
+							// Obtain a reference to MZmine 2 Desktop
+							Desktop desktop = MZmineCore.getDesktop();
+
+							// Create a menu item for our module
+							desktop.addMenuItem(MZmineMenu.RAWDATAFILTERING,
+									"Centroider", "Module to transform continuous "
+
+											+ "data into centroid mode",
+									KeyEvent.VK_C, false, this, null);
+
+						}
+
+						/**
+						 * Method defined by the ActionListener interface. This
+						 * method is called when user activates our menu item.
+						 */
+						public void actionPerformed(ActionEvent e) {
+
+							// Obtain a reference to MZmine 2 Desktop
+							Desktop desktop = MZmineCore.getDesktop();
+
+							// Obtain selected data files
+							RawDataFile[] dataFiles = desktop.getSelectedDataFiles();
+
+							// If no data file is selected, exit
+							if (dataFiles.length == 0) {
+
+								MZmineCore.getDesktop().displayErrorMessage(
+										"Please select a data file");
+								return;
+
+							}
+
+							// Show the parameter setup dialog with our parameter
+							// class
+							ParameterSetupDialog dialog = new ParameterSetupDialog(
+
+									"Please set parameter values for Centroider",
+									parameters);
+							dialog.setVisible(true);
+
+							// If user clicked cancel, just exit
+							if (dialog.getExitCode() != ExitCode.OK)
+
+								return;
+
+							// Create a copy of our parameters. The copy will be used
+							// for one processing session. This way we avoid sharing
+							// the same instance of the parameters by many threads -
+							// that would cause trouble because user may run the same
+
+							// method with different parameters later.
+							CentroiderParameters pCopy = (CentroiderParameters) parameters
+									.clone();
+
+							// Process each data file in a separate task
+							for (int i = 0; i < dataFiles.length; i++) {
+
+								// Create a new task
+								Task task = new CentroiderTask(dataFiles[i], pCopy);
+
+								// Submit the task to the task controller
+								MZmineCore.getTaskController().addTask(task);
+
+							}
+
+						}
+
+						/**
+						 * This method returns our parameter set, for example when
+						 * parameters are being saved to a configuration file.
+						 * 
+						 */
+						public ParameterSet getParameterSet() {
+
+							return parameters;
+						}
+
+						/**
+						 * This method sets new parameters, for example when these
+						 * are loaded from a configuration file.
+						 */
+						public void setParameters(ParameterSet parameters) {
+
+							this.parameters = (CentroiderParameters) parameters;
+						}
+
+					}
+					]]>
+					</script>
+
+					<hr>
+					<span class="anchor" id="CentroiderParameters"></span>
+					<h2>CentroiderParameters.java source</h2>
+					<script type="syntaxhighlighter" class="brush: java">
+					<![CDATA[
+					package net.sf.mzmine.modules.centroider;
+
+					import net.sf.mzmine.data.Parameter;
+					import net.sf.mzmine.data.ParameterType;
+					import net.sf.mzmine.data.impl.SimpleParameter;
+					import net.sf.mzmine.data.impl.SimpleParameterSet;
+					import net.sf.mzmine.main.MZmineCore;
+
+					/**
+					 * This class defines the parameters of our module. We have only
+					 * one parameter (mzStepWidth). This class must implement the
+					 * StorableParameterSet interface, so MZmine 2 can save our
+					 * parameter values on exit and reload them when restarted. The
+					 * easiest way to implement the StorableParameterSet interface is
+					 * to extend the SimpleParameterSet class.
+					 * 
+					 */
+
+					public class CentroiderParameters extends SimpleParameterSet {
+
+						/**
+						 * Here we define our only parameter, the width of the m/z
+						 * interval which will be centroided into single peak. We
+						 * must set the type of the parameter (DOUBLE), name,
+						 * description, units, default value, minimum value, maximum
+						 * value (set to null), and formatting of the values (we use
+						 * default format for m/z values).
+						 */
+						public static final Parameter mzStepWidth = new SimpleParameter(
+
+								ParameterType.DOUBLE, "m/z step width",
+								"width of the m/z interval that will "
+										+ " be replaced by a single peak", "m/z",
+								new Double(1.0), new Double(0.0), null, MZmineCore
+
+										.getMZFormat());
+
+						/**
+						 * Constructor which provides our parameter (only one) to the
+						 * SimpleParameterSet constructor.
+						 */
+						public CentroiderParameters() {
+
+							super(new Parameter[] { mzStepWidth });
+
+						}
+
+					}
+					]]>
+					</script>
+
+					<hr>
+					<span class="anchor" id="CentroiderTask"></span>
+					<h2>CentroiderTask.java source</h2>
+					
+					<script type="syntaxhighlighter" class="brush: java">
+					<![CDATA[
+					package net.sf.mzmine.modules.centroider;
+
+					import java.util.ArrayList;
+
+					import net.sf.mzmine.data.DataPoint;
+					import net.sf.mzmine.data.RawDataFile;
+
+					import net.sf.mzmine.data.RawDataFileWriter;
+					import net.sf.mzmine.data.Scan;
+					import net.sf.mzmine.data.impl.SimpleDataPoint;
+					import net.sf.mzmine.data.impl.SimpleScan;
+					import net.sf.mzmine.main.MZmineCore;
+					import net.sf.mzmine.taskcontrol.Task;
+					import net.sf.mzmine.taskcontrol.TaskStatus;
+
+					/**
+					 * This class implements the Task interface. It represents the
+					 * main logic of the data processing module, which is executed by
+					 * passing this task to the TaskController.
+					 */
+
+					class CentroiderTask implements Task {
+
+						// Original data file and newly created centroided file
+						private RawDataFile origDataFile, centroidedDataFile;
+
+						// Task status, initially set to WAITING
+						private TaskStatus status = TaskStatus.WAITING;
+
+						// Error message, in case error happens
+						private String errorMessage;
+
+						// Counters of scans
+						private int centroidedScans, totalScans;
+
+						// Our only parameter - m/z window width
+						private double mzStepWidth;
+
+						/**
+						 * Constructor
+						 */
+						CentroiderTask(RawDataFile origDataFile,
+								CentroiderParameters parameters) {
+
+							this.origDataFile = origDataFile;
+							mzStepWidth = (Double) parameters
+
+									.getParameterValue(CentroiderParameters.mzStepWidth);
+						}
+
+						/**
+						 * Returns task description. This is shown in the task list
+						 * in the GUI.
+						 */
+
+						public String getTaskDescription() {
+							return "Centroiding " + origDataFile;
+
+						}
+
+						/**
+						 * Returns a double value in the range 0.0-1.0, representing
+						 * how much of the task has been completed. This is shown in
+						 * the task list in the GUI.
+						 */
+						public double getFinishedPercentage() {
+
+							if (totalScans == 0)
+								return 0;
+
+							return (double) centroidedScans / totalScans;
+						}
+
+						/**
+						 * Returns the task status. This is shown in the task list in
+						 * the GUI.
+						 */
+						public TaskStatus getStatus() {
+							return status;
+
+						}
+
+						/**
+						 * Returns the error message, if the task status has been set
+						 * to ERROR
+						 */
+						public String getErrorMessage() {
+
+							return errorMessage;
+						}
+
+						/**
+						 * This method is called by the GUI when the user cancels the
+						 * task. We only set the task status to CANCELED. The task
+						 * status is periodically checked during processing in the
+						 * run() method.
+						 */
+						public void cancel() {
+
+							status = TaskStatus.CANCELED;
+						}
+
+						/**
+						 * This method contains the actual data processing. It is
+						 * called by the TaskController when a new thread is
+						 * allocated for this task.
+						 */
+
+						public void run() {
+
+							// Update the status of this task
+							status = TaskStatus.PROCESSING;
+
+							// Use the try/catch block to catch any exceptions and in
+							// case of an exception, set the status and errorMessage
+							// accordingly
+							try {
+
+								// Create a new file
+
+								String newName = origDataFile.getName()
+										+ " centroided";
+
+								RawDataFileWriter rawDataFileWriter = MZmineCore
+										.createNewFile(newName);
+
+								// Get scan numbers from original file
+								int[] scanNumbers = origDataFile.getScanNumbers();
+
+								// Set the counter of all scans
+								totalScans = scanNumbers.length;
+
+								// Loop through all scans
+
+								for (int scanIndex = 0; scanIndex < totalScans; scanIndex++) {
+
+									// If this task was canceled, stop processing
+									if (status == TaskStatus.CANCELED)
+
+										return;
+
+									// Get original continuous scan
+									Scan oldScan = origDataFile
+
+											.getScan(scanNumbers[scanIndex]);
+
+									// Get data points (m/z and intensity pairs) of
+									// the original scan
+
+									DataPoint oldDataPoints[] = oldScan
+											.getDataPoints();
+
+									// Convert the data points to centroid using our
+									// algorithm
+									DataPoint newDataPoints[] = doCentroid(oldDataPoints);
+
+									// Create centroided scan
+									SimpleScan newScan = new SimpleScan(oldScan);
+
+									newScan.setCentroided(true);
+									newScan.setDataPoints(newDataPoints);
+
+									// Write the centroided scan to new file
+									rawDataFileWriter.addScan(newScan);
+
+									// Update the counter of already centroided scans
+
+									centroidedScans++;
+
+								}
+
+								// Finalize writing
+								centroidedDataFile = rawDataFileWriter
+
+										.finishWriting();
+
+								// Add the newly created file to the project
+								MZmineCore.getCurrentProject().addFile(
+
+										centroidedDataFile);
+
+								// Set task status to FINISHED
+								status = TaskStatus.FINISHED;
+
+							} catch (Exception e) {
+								status = TaskStatus.ERROR;
+
+								errorMessage = e.toString();
+								return;
+							}
+
+						}
+
+						/**
+						 * This method implements the actual centroiding algorithm.
+						 * It takes the original continuous data points as argument
+						 * and returns an array of centroided data points.
+						 */
+						private DataPoint[] doCentroid(DataPoint oldDataPoints[]) {
+
+							// If there is are no data points in the original array,
+							// just return original array
+							if (oldDataPoints.length == 0)
+
+								return oldDataPoints;
+
+							// Create an ArrayList for new, centroided data points
+							ArrayList<DataPoint> newDataPoints = new ArrayList<DataPoint>();
+
+							// This variable represents the m/z of each
+							// centroided peak
+							double mz = oldDataPoints[0].getMZ() + (mzStepWidth / 2);
+
+							// This variable represents the intensity of
+							// each centroided peak
+							double intensitySum = 0;
+
+							// Loop through all original data points
+							for (DataPoint dp : oldDataPoints) {
+
+								// If we reached the end of the interval <mz;
+								// mz+mzStepWidth/2> then finish this centroided peak
+								// and start a new interval
+								if (dp.getMZ() > mz + (mzStepWidth / 2)) {
+
+									if (intensitySum > 0) {
+
+										// Create a new centroided peak
+										DataPoint newDP = new SimpleDataPoint(mz,
+												intensitySum);
+
+										newDataPoints.add(newDP);
+									}
+
+									// Move the m/z to the start of new interval,
+									// which contains the current data point (dp)
+
+									while (dp.getMZ() > mz + (mzStepWidth / 2)) {
+
+										mz += mzStepWidth;
+									}
+
+									// Start new interval with zero intensity
+									intensitySum = 0;
+
+								}
+
+								// Keep summing the intensity of data points in the
+								// current interval
+								intensitySum += dp.getIntensity();
+
+							}
+
+							// Don't forget to add a peak for the last interval
+							if (intensitySum > 0) {
+
+								DataPoint newDP = new SimpleDataPoint(mz,
+										intensitySum);
+
+								newDataPoints.add(newDP);
+							}
+
+							return newDataPoints.toArray(new DataPoint[0]);
+
+						}
+
+						/**
+						 * Returns the objects newly created by this task. This
+						 * method is used during batch processing, when newly created
+						 * objects are automatically used as input for next step of
+						 * the batch. In case of this module, only new centroided
+						 * data file is created.
+						 */
+						public Object[] getCreatedObjects() {
+
+							return new Object[] { centroidedDataFile };
+						}
+
+					}
+					]]>
+					</script>
+
+				</div>
+				
+			</div>
+
+			<footer class="short" id="footer">
+			<div class="footer-copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p>© Copyright 2015. All Rights Reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			</footer>
+			
+		</div>
+
+		<!-- Vendor -->
+		<script src="vendor/jquery/jquery.js"></script>
+		<script src="vendor/bootstrap/bootstrap.js"></script>
+		<script src="vendor/common/common.js"></script>
+		<script src="vendor/owlcarousel/owl.carousel.js"></script>
+		<script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="admin/assets/javascripts/theme.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+		
+		<!-- Google Analytics -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-63013892-1']);
+			_gaq.push(['_trackPageview']);
+		
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		
+	</body>
+</html>

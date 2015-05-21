@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- Basic -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>MZmine 2</title>
+		<meta name="description" content="MZmine 2 is an open-source software for mass spectrometry data processing.">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="favicon.ico" />
+		
+		<!-- Web Fonts  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+		
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css" media="screen">
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css" media="screen">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" media="screen">
+		
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css" />
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-animate.css" />
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="css/skins/default.css" />
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+		
+		<!--[if IE]>
+			<link rel="stylesheet" href="css/ie.css">
+		<![endif]-->
+
+		<!--[if lte IE 8]>
+			<script src="vendor/respond/respond.js"></script>
+			<script src="vendor/excanvas/excanvas.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<div class="body">
+			<header id="header">
+				<div class="container">
+					<h1 class="logo">
+						<a href="/">
+							<img alt="QC" width="427" height="99" class="logo-normal" data-sticky-width="237" data-sticky-height="55" src="img/logo.png">
+							<img alt="QC" width="237" height="55" class="logo-sticky" src="img/logo.png">
+						</a>
+					</h1>
+					<button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
+						<i class="fa fa-bars"></i>
+					</button>
+				</div>
+				<div class="navbar-collapse nav-main-collapse collapse">
+					<div class="container">
+						<nav class="nav-main mega-menu">
+							<ul class="nav nav-pills nav-main" id="mainMenu">
+								<li>
+									<a href="/">Home</a>
+								</li>
+								<li class="dropdown active mega-menu-item mega-menu-fullwidth">
+									<a  class="dropdown-toggle" href="features.html">
+										Features
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<div class="mega-menu-content">
+												<div class="row">
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">General Features</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#FileFormats">Raw data file formats</a></li>
+																	<li><a href="features.html#ImportExport">Import and Export</a></li>
+																	<li><a href="features.html#Batch">Batch Processing</a></li>
+																</ul>
+																<br/>
+																<span class="mega-menu-sub-title">Raw Data Methods</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#RawFiltering">Filtering & Smoothing</a></li>
+																	<li><a href="features.html#RawDetection">Peak Detection</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Peak List Methods</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#GapFilling">Gap Filling</a></li>
+																	<li><a href="features.html#Isotopes">Isotope Detection</a></li>
+																	<li><a href="features.html#Filtering">Filtering</a></li>
+																	<li><a href="features.html#Alignment">Alignment</a></li>
+																	<li><a href="features.html#Normalization">Normalization</a></li>
+																	<li><a href="features.html#Identification">Identification</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Statistical Analysis</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#CV">CV Plot</a></li>
+																	<li><a href="features.html#Logratio">Logratio Analysis</a></li>
+																	<li><a href="features.html#PCA">Principal Component Analysis (PCA)</a></li>
+																	<li><a href="features.html#CDA">Curvilinear Distant Analysis (CDA)</a></li>
+																	<li><a href="features.html#SammonsProjection">Sammon's Projection</a></li>
+																	<li><a href="features.html#Clustering">Clustering</a></li>
+																	<li><a href="features.html#Heatmap">Heat Map Plot</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Visualization</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#TIC_XIC">TIC/XIC Visualizer</a></li>
+																	<li><a href="features.html#Spectra">Spectra Visualizer</a></li>
+																	<li><a href="features.html#2D">2D Visualizer</a></li>
+																	<li><a href="features.html#3D">3D Visualizer</a></li>
+																	<li><a href="features.html#NeutralLoss">Neutral Loss Visualizer</a></li>
+																	<li><a href="features.html#Scatter">Scatter Plot</a></li>
+																	<li><a href="features.html#Histogram">Histogram Plot</a></li>
+																	<li><a href="features.html#PeakIntensity">Peak Intensity Plot</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>								
+								<li class="dropdown">
+									<a class="dropdown-toggle" href="download.html">
+										Download
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="download.html">Download</a></li>
+										<li><a href="changelog.html">Changelog</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="development.html">Development</a>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" href="support.html">
+										Support
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="support.html">Support</a></li>
+										<li><a href="documentation.html">Documentation</a></li>
+										<li><a href="support.html#Issues">Issues</a></li>
+										<li><a href="support.html#Suggestions">Suggestions</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="contributors.html">Contributors</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<div role="main" class="main">
+
+				<section class="page-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<h2>Features</h2>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="container">
+					<h2>General <strong>Features</strong></h2>
+					
+					<span class="anchor" id="FileFormats"></span>
+					<h4>Raw data file formats</h4>
+					MZmine 2 can read and process both unit mass resolution and exact mass resolution (e.g. FTMS) data in both continuous and centroided modes, including fragmentation (MSn) scans. Supported data formats are:<br/>
+					<ul>
+						<li><a href="http://www.psidev.info/mzml" target="_blank">mzML</a> (mzML versions 1.0 and 1.1)</li>
+						<li><a href="http://tools.proteomecenter.org/wiki/index.php?title=Formats:mzXML" target="_blank">mzXML</a> (mzXML versions 2.0 to 3.1) </li>
+						<li><a href="http://www.psidev.info/mzdata-1_0_5" target="_blank">mzData</a> (mzData versions 1.04 and 1.05)</li>
+						<li><a href="http://www.unidata.ucar.edu/software/netcdf/" target="_blank">NetCDF</a> (no MS<sup>n</sup> support)</li>
+						<li>Thermo RAW</li>
+						<li>Waters RAW</li>
+					</ul>
+					<br/>
+					
+					<span class="anchor" id="ImportExport"></span>
+					<h4>Import and Export</h4>
+					In order to exchange data with other applications, the following import and export file formats are supported: <br/><br/>
+					<div class="col-md-3">
+						<strong>Import</strong>
+						<ul>
+							<li>CASMI challenge task</li>
+							<li>mzTab</li>
+							<li>XML</li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<strong>Export</strong>
+						<ul>
+							<li>CSV</li>
+							<li>MetaboAnalyst</li>
+							<li>mzTab</li>
+							<li>SQL database</li>
+							<li>XML</li>
+						</ul>
+					</div>
+					<br clear="both" />
+					
+					<span class="anchor" id="Batch"></span>
+					<h4>Batch Processing</h4>
+					MZmine 2 has the ability to run multiple data processing methods in batch mode using any of the methods available in MZmine. The batch mode can be run as a command-line application which makes it easy to integrate MZmine into automated data analysis workflows like QC systems.
+					
+					<br/><br/><br/>
+					<h2>Raw Data <strong>Methods</strong></h2>
+					
+					<span class="anchor" id="RawFiltering"></span>
+					<h4>Filtering & Smoothing</h4>
+					
+					<br/>
+					
+					<span class="anchor" id="RawDetection"></span>
+					<h4>Peak Detection</h4>
+					Peak detection is performed in a three-step manner: first, mass values are detected within each spectrum (several methods are available, depending on the nature of the data). In the second step, a chromatogram is constructed for each of the mass values which span over a certain time range. Finally, deconvolution algorithms are applied to each chromatogram to recognize the actual chromatographic peaks.<br/>
+					
+					<div class="owl-carousel owl-carousel-spaced" data-plugin-options='{"items": 3, "dots": "false"}' id="imgGallery">
+						<div>
+							<div class="portfolio-item img-thumbnail">
+								<a class="thumb-info" href="img/screenshots/MassDetection.png" title="Mass Detection">
+									<img alt="" class="img-responsive" src="img/screenshots/MassDetection_S.png">
+									<span class="thumb-info-title">
+										<span class="thumb-info-inner">Mass Detection</span>
+									</span>
+									<span class="thumb-info-action">
+										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-search-plus"></i></span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="portfolio-item img-thumbnail">
+								<a class="thumb-info" href="img/screenshots/ChromatogramDeconvolution.png" title="Peak Deconvolution">
+									<img alt="" class="img-responsive" src="img/screenshots/ChromatogramDeconvolution_S.png">
+									<span class="thumb-info-title">
+										<span class="thumb-info-inner">Deconvolution</span>
+									</span>
+									<span class="thumb-info-action">
+										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-search-plus"></i></span>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					
+					<br/>
+					<h2>Peak List <strong>Methods</strong></h2>
+					
+					
+				</div>
+
+					
+				</div>
+				
+			</div>
+
+			<footer class="short" id="footer">
+			<div class="footer-copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p>© Copyright 2015. All Rights Reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			</footer>
+			
+		</div>
+
+		<!-- Vendor -->
+		<script src="vendor/jquery/jquery.js"></script>
+		<script src="vendor/bootstrap/bootstrap.js"></script>
+		<script src="vendor/common/common.js"></script>
+		<script src="vendor/owlcarousel/owl.carousel.js"></script>
+		<script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="admin/assets/javascripts/theme.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+		
+		<!-- Google Analytics -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-63013892-1']);
+			_gaq.push(['_trackPageview']);
+		
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		
+	</body>
+</html>

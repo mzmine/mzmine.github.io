@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- Basic -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>MZmine 2</title>
+		<meta name="description" content="MZmine 2 is an open-source software for mass spectrometry data processing.">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="favicon.ico" />
+		
+		<!-- Web Fonts  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+		
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css" media="screen">
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css" media="screen">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" media="screen">
+		
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css" />
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-animate.css" />
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="css/skins/default.css" />
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+		
+		<!--[if IE]>
+			<link rel="stylesheet" href="css/ie.css">
+		<![endif]-->
+
+		<!--[if lte IE 8]>
+			<script src="vendor/respond/respond.js"></script>
+			<script src="vendor/excanvas/excanvas.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<div class="body">
+			<header id="header">
+				<div class="container">
+					<h1 class="logo">
+						<a href="/">
+							<img alt="QC" width="427" height="99" class="logo-normal" data-sticky-width="237" data-sticky-height="55" src="img/logo.png">
+							<img alt="QC" width="237" height="55" class="logo-sticky" src="img/logo.png">
+						</a>
+					</h1>
+					<button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
+						<i class="fa fa-bars"></i>
+					</button>
+				</div>
+				<div class="navbar-collapse nav-main-collapse collapse">
+					<div class="container">
+						<nav class="nav-main mega-menu">
+							<ul class="nav nav-pills nav-main" id="mainMenu">
+								<li>
+									<a href="/">Home</a>
+								</li>
+								<li class="dropdown mega-menu-item mega-menu-fullwidth">
+									<a  class="dropdown-toggle" href="features.html">
+										Features
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<div class="mega-menu-content">
+												<div class="row">
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">General Features</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#FileFormats">Raw data file formats</a></li>
+																	<li><a href="features.html#ImportExport">Import and Export</a></li>
+																	<li><a href="features.html#Batch">Batch Processing</a></li>
+																</ul>
+																<br/>
+																<span class="mega-menu-sub-title">Raw Data Methods</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#RawFiltering">Filtering & Smoothing</a></li>
+																	<li><a href="features.html#RawDetection">Peak Detection</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Peak List Methods</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#GapFilling">Gap Filling</a></li>
+																	<li><a href="features.html#Isotopes">Isotope Detection</a></li>
+																	<li><a href="features.html#Filtering">Filtering</a></li>
+																	<li><a href="features.html#Alignment">Alignment</a></li>
+																	<li><a href="features.html#Normalization">Normalization</a></li>
+																	<li><a href="features.html#Identification">Identification</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Statistical Analysis</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#CV">CV Plot</a></li>
+																	<li><a href="features.html#Logratio">Logratio Analysis</a></li>
+																	<li><a href="features.html#PCA">Principal Component Analysis (PCA)</a></li>
+																	<li><a href="features.html#CDA">Curvilinear Distant Analysis (CDA)</a></li>
+																	<li><a href="features.html#SammonsProjection">Sammon's Projection</a></li>
+																	<li><a href="features.html#Clustering">Clustering</a></li>
+																	<li><a href="features.html#Heatmap">Heat Map Plot</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Visualization</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#TIC_XIC">TIC/XIC Visualizer</a></li>
+																	<li><a href="features.html#Spectra">Spectra Visualizer</a></li>
+																	<li><a href="features.html#2D">2D Visualizer</a></li>
+																	<li><a href="features.html#3D">3D Visualizer</a></li>
+																	<li><a href="features.html#NeutralLoss">Neutral Loss Visualizer</a></li>
+																	<li><a href="features.html#Scatter">Scatter Plot</a></li>
+																	<li><a href="features.html#Histogram">Histogram Plot</a></li>
+																	<li><a href="features.html#PeakIntensity">Peak Intensity Plot</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>								
+								<li class="dropdown active">
+									<a class="dropdown-toggle" href="download.html">
+										Download
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="download.html">Download</a></li>
+										<li><a href="changelog.html">Changelog</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="development.html">Development</a>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" href="support.html">
+										Support
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="support.html">Support</a></li>
+										<li><a href="documentation.html">Documentation</a></li>
+										<li><a href="support.html#Issues">Issues</a></li>
+										<li><a href="support.html#Suggestions">Suggestions</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="contributors.html">Contributors</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<div role="main" class="main">
+
+			
+				<section class="page-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="breadcrumb">
+									<li><a href="/">Home</a></li>
+									<li class="active">Download</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<h2>Changelog</h2>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="container">
+					
+					<div class="timeline timeline-simple changelog">
+						<div class="tm-body" style="padding-bottom:10px;">
+							<ol class="tm-items" id="timeline1">
+							
+								<li>
+									<div class="tm-box">
+										<h4>2.14.2</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">April 14th, 2015</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Java3D dependency conflict in the 3D visualizer (Tomáš Pluskal)</li>
+										</ul>
+										<br/>
+										
+										<h4>2.14.1</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">April 9th, 2015</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Version number was incorrectly reported as 0.0 (Tomáš Pluskal)</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Minor fixes in the TIC visualizer (Tomáš Pluskal)</li>
+										</ul>
+										<br/>
+										
+										<h4>2.14</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">April 3rd, 2015</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Option to highlight samples in plots (Thomas F. Dyrlund)</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Noise level cut-off to the targeted peak detection module (Thomas F. Dyrlund)</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Option to remove common prefix in names when importing raw data files (Thomas F. Dyrlund)</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Text search options to the row filter (Tomáš Pluskal)</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Workaround for the issue that editing of compound identity was not possible if some of the first 3 columns were hidden (Tomáš Pluskal)</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Chromatogram renamed to TIC, Base peak chromatogram, XIC and XIC (base peak) (Thomas F. Dyrlund)</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Bugs in peak duration calculations in the targeted peak detection and gap filling modules (Thomas F. Dyrlund)</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Error with the batch mode when using the row filter module (Thomas F. Dyrlund)</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Error with rounding of m/z ranges for XIC graphs (Thomas F. Dyrlund)</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Crash of Waters reader when function contains no scans (Tomáš Pluskal)</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Selection of data files or peak lists are kept after sorting (Tomáš Pluskal)</li>
+										</ul>
+									</div>
+								</li>
+								
+								<li>
+									<div class="tm-box">
+										<h4>2.13.1</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">February 9th, 2015</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Two new modules for sorting files and peak lists alphabetically (Tomáš Pluskal)</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Tool to strip extensions from raw data file names (Thomas F. Dyrlund)</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;2D rendering of molecules was improved in database search (Tomáš Pluskal)</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Severe bug in project loading (precursor m/z values were lost) (Tomáš Pluskal)</li>
+										</ul>
+										<br/>
+										
+										<h4>2.13</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">February 3rd, 2015</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Ability to read Waters RAW folders on Windows (Tomáš Pluskal)</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Scan polarity is now recognized and indicated in the GUI (Tomáš Pluskal)</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Import and export from/to mzTab files (Thomas F. Dyrlund)</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Thermo RAW file import does not require installation of MSFileReader anymore (Tomáš Pluskal)</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Java3D installation is not required anymore (Tomáš Pluskal)</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Better recognition of centroided/profile spectra (Tomáš Pluskal)</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Improved SQL database export (Thomas F. Dyrlund)</li>
+											
+										</ul>
+									</div>
+								</li>
+								
+								<li>
+									<div class="tm-box">
+										<h4>2.12</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">December 2nd, 2014</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Option to sort raw data files or peak lists alphabetically (Tomáš Pluskal)</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;New algorithms in the Baseline correction module (Gauthier Boaglio)</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;MZmine now automatically checks for newer versions (Thomas F. Dyrlund)</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Improved reporting in the startMZmine script (Tomáš Pluskal)</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Improved reporting of errors in case of problems with connection to R (Thomas F. Dyrlund)</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Improved zooming options in TIC visualizer (Thomas F. Dyrlund)</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Windows now remember their sizes and positions (Tomáš Pluskal)</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Bug that caused freezing when reading certain types of mzML files (Tomáš Pluskal)</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Bug in Targeted peak detection module that caused peak areas to be negative (Tomáš Pluskal)</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Bugs in Manual peak picker (Thomas F. Dyrlund)</li>
+										</ul>
+									</div>
+								</li>
+								
+								<li>
+									<div class="tm-box">
+										<h4>2.11</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">August 15th, 2014</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;New 2D peak detection module called GridMass (Victor Trevino)</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Option to export charges to the CSV export module (Tomáš Pluskal)</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;GUI changed from MDI style to multi-window style, to support operation on multiple screens (Tomáš Pluskal)</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;The online search modules to reflect the current database websites (Tomáš Pluskal)</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Bug in Join Aligner where the m/z weight variable was ignored (Tomáš Pluskal)</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Operation of Targeted peak detection in batch mode (Tomáš Pluskal)</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Export of peak duration in the CSV export module (Tomáš Pluskal)</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Reading precursor charge from newer versions of Thermo RAW files (Tomáš Pluskal)</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Operation of Dataset filtering module in batch mode (Gauthier Boaglio)</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Steps reordering in the batch setup (Gauthier Boaglio)</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Peak area calculation in the Peak extender module (Gauthier Boaglio)</li>
+										</ul>
+									</div>
+								</li>
+								
+							</ol>
+						</div>
+					</div>
+					<div id="showAllDiv">
+						<p style="text-align:center;"><a href="#timeline2" class="btn btn-primary" onclick="document.getElementById('timeline1').innerHTML=document.getElementById('timeline1').innerHTML+document.getElementById('timeline2').innerHTML;document.getElementById('showAllDiv').innerHTML='';" style="font-size:18px;">Show the changelog prior to version 2.11</a></p><br/><br/>
+					</div>
+					<div class="timeline timeline-simple changelog" style="display:none;">
+						<div class="tm-body" style="padding-top:0px;">
+							<ol class="tm-items" id="timeline2">
+								<li>
+									<div class="tm-box">
+										<h4>2.10</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">October 1st, 2012</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;The HMDB search module to reflect the changes in the HMDB website</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;KEGG search to use the new REST API instead of the obsolete SOAP API</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Visualization tool for hierarchical clustering</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Exception in METLIN search when no results are found</li>
+										</ul>
+									</div>
+								</li>
+								
+								<li>
+									<div class="tm-box">
+										<h4>2.9.1</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">June 22nd, 2012</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Opening of certain mzML files that do not have an id attribute</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Crashing of MZmine when R is not installed and R-based modules are invoked</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Bugs in the modules for neutral loss plot, complex search and formula search</li>
+										</ul>
+										<br/>
+										
+										<h4>2.9.0</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">June 4th, 2012</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;XCMS's wavelet algorithm to the chromatogram deconvolution module</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Bioconductor's CAMERA package for identification of related peaks</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Saving & loading of projects larger than 4GB</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Exception appearing when individual peaks were plotted in 3D visualizer</li>
+										</ul>
+									</div>
+								</li>
+								
+								<li>
+									<div class="tm-box">
+										<h4>2.8</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">April 23rd, 2012</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Copy & paste feature for peak identities</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Improvements in the targeted peak detection module</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Improvements in the adduct search module (customized list of adducts)</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Connection to the PlantCyc database was fixed</li>
+										</ul>
+									</div>
+								</li>
+								
+								<li>
+									<div class="tm-box">
+										<h4>2.7.2</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">March 29th, 2012</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Bug in isotope pattern comparison algorithm</li>
+										</ul>
+										<br/>
+
+										<h4>2.7.1</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">March 28th, 2012</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Bug that caused an error when opening projects saved with version 2.7</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Bug in METLIN database search</li>
+										</ul>
+										<br/>
+										
+										<h4>2.7</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">March 21st, 2012</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Legend can be hidden in the TIC visualizer</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;MZmine is now built using Maven instead of Ant</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;m/z tolerance can be specified as both absolute (m/z) and relative (ppm) values</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Various bugs in GUI and reading of mzML files</li>
+										</ul>
+										<br/>
+									</div>
+								</li>
+								
+								<li>
+									<div class="tm-box">
+										<h4>2.6</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">February 15th, 2012</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;YMDB, PlantCyc and METLIN databases added to the online database search module</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Support for mzML files containing ReferenceableParamGroup</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;SQL export module</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Ability to run in batch mode without GUI</li>
+										</ul>
+									</div>
+								</li>
+								
+								<li>
+									<div class="tm-box">
+										<h4>2.5</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">January 15th, 2012</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Thermo RAW file import on Linux and other platforms using Wine</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;MS/MS and isotope pattern export</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Export of results of chemical formula prediction</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Min/max duration parameter added to chromatogram deconvolution</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Reduced memory usage</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Enhancements of the TIC visualizer</li>
+										</ul>
+									</div>
+								</li>
+								
+								<li>
+									<div class="tm-box">
+										<h4>2.4</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">November 17th, 2011</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Minor bug in project saving, GUI and batch mode handling</li>
+										</ul>
+									</div>
+								</li>
+								
+								
+								<li>
+									<div class="tm-box">
+										<h4>2.3</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">September 21st, 2011</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Support for 64-bit precision mzXML files and netcdf with scale_factor</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Support for modules written in R</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;New module for heat maps</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;New module for baseline correction</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;New module for smoothing</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Modular design of parameters and their editing components</li>
+										</ul>
+									</div>
+								</li>
+								
+								<li>
+									<div class="tm-box">
+										<h4>2.2</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">February 7th, 2011</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;New module for clustering</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;New module for chemical formula prediction</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Thermo RAW files are now imported using the MSFileReader library istead of Xcalibur</li>
+										</ul>
+									</div>
+								</li>
+								
+								<li>
+									<div class="tm-box">
+										<h4>2.1</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">September 21st, 2010</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Option to cancel all running tasks</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Option to close the project</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Redesign of parameter setup dialog</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;CSV export now offers the choice of available peak identities</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;A number of bugs in the RANSAC aligner</li>
+										</ul>
+									</div>
+								</li>
+
+								<li>
+									<div class="tm-box">
+										<h4>2.0</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">June 22nd, 2010</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Help and manual competed</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Mascot search module improved</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Project saving does not lose information about peak identity</li>
+										</ul>
+									</div>
+								</li>
+								
+								<li>
+									<div class="tm-box">
+										<h4>1.98</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">June 16th, 2010</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Gap filling with RT correction</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Initial work on MASCOT search module for proteomics</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;RANSAC aligner finished</li>
+										</ul>
+									</div>
+								</li>
+								
+								<li>
+									<div class="tm-box">
+										<h4>1.97</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">December 19th, 2009</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Isotope pattern support redesigned</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Improvements to the 3D visualizer</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Continued work on the RANSAC aligner and the gap filling module</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Projects can now be larger than 4GB</li>
+										</ul>
+									</div>
+								</li>
+								
+								<li>
+									<div class="tm-box">
+										<h4>1.96</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">August 4th, 2009</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Online identification using METLIN, HMDB and KEGG databases</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Initial development on new alignment module using RANSAC algorithm</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Project saving/loading code cleaned-up and simplified</li>
+										</ul>
+									</div>
+								</li>
+								
+								<li>
+									<div class="tm-box">
+										<h4>1.95</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">April 22nd, 2009</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;New task controller module and preferences dialog</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Methods for automatic identification of fragment, adducts and complexes</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;New implementation of project saving/loading</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Improvements of peak picking speed and memory usage</li>
+										</ul>
+									</div>
+								</li>
+								
+								<li>
+									<div class="tm-box">
+										<h4>1.94</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">February 25th, 2009</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;New JTree component for browsing the project items</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Improvement of 2D visualizer</li>
+										</ul>
+									</div>
+								</li>
+								
+								<li>
+									<div class="tm-box">
+										<h4>1.93</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">January 30th, 2009</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;New visualizers: scatter plot and histogram</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Peak list XML import and export</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Simplified MZviewer mode for viewing analyzed data</li>
+											<li><span class="label label-info">Updated</span>&nbsp;&nbsp;-&nbsp;&nbsp;Peak detection split into 3 separate modules</li>
+										</ul>
+									</div>
+								</li>
+								
+								<li>
+									<div class="tm-box">
+										<h4>1.92</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">November 12th, 2008</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Module for searching related peaks - fragments, dimers etc.</li>
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Isotope pattern visualization and similarity comparison</li>
+										</ul>
+									</div>
+								</li>
+								
+								<li>
+									<div class="tm-box">
+										<h4>1.91</h4>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="release-date">September 22nd, 2008</span>
+										<ul class="list-unstyled">
+											<li><span class="label label-primary">Added</span>&nbsp;&nbsp;-&nbsp;&nbsp;Online connection to PubChem Compound database</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Opening of CDF files created by Thermo XConverter</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Missing library for reading Thermo RAW files on Windows</li>
+											<li><span class="label label-danger">Fixed</span>&nbsp;&nbsp;-&nbsp;&nbsp;Bugs in raw data filtering</li>
+										</ul>
+									</div>
+								</li>
+
+							</ol>
+						</div>
+					</div>
+					
+				</div>
+			
+			</div>
+			
+			<footer class="short" id="footer">
+			<div class="footer-copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p>© Copyright 2015. All Rights Reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			</footer>
+			
+		</div>
+
+		<!-- Vendor -->
+		<script src="vendor/jquery/jquery.js"></script>
+		<script src="vendor/bootstrap/bootstrap.js"></script>
+		<script src="vendor/common/common.js"></script>
+		<script src="vendor/owlcarousel/owl.carousel.js"></script>
+		<script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="admin/assets/javascripts/theme.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+		
+		<!-- Google Analytics -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-63013892-1']);
+			_gaq.push(['_trackPageview']);
+		
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		
+	</body>
+</html>
