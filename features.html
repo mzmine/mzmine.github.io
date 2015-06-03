@@ -238,14 +238,43 @@
 					
 					<span class="anchor" id="RawFiltering"></span>
 					<h4>Filtering & Smoothing</h4>
+					There are several filtering and smoothing modules available for e.g. baseline correction, scan smoothing or cropping of the data.
 					
+					<div class="owl-carousel owl-carousel-spaced" data-plugin-options='{"items": 3, "dots": "false"}' id="imgGallery">
+						<div>
+							<div class="portfolio-item img-thumbnail">
+								<a class="thumb-info" href="img/screenshots/Baseline.png" title="Baseline Correction">
+									<img alt="" class="img-responsive" src="img/screenshots/Baseline_S.png">
+									<span class="thumb-info-title">
+										<span class="thumb-info-inner">Baseline Correction</span>
+									</span>
+									<span class="thumb-info-action">
+										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-search-plus"></i></span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="portfolio-item img-thumbnail">
+								<a class="thumb-info" href="img/screenshots/ScanFiltering.png" title="Scan Filtering">
+									<img alt="" class="img-responsive" src="img/screenshots/ScanFiltering_S.png">
+									<span class="thumb-info-title">
+										<span class="thumb-info-inner">Scan Filtering</span>
+									</span>
+									<span class="thumb-info-action">
+										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-search-plus"></i></span>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
 					<br/>
 					
 					<span class="anchor" id="RawDetection"></span>
 					<h4>Peak Detection</h4>
 					Peak detection is performed in a three-step manner: first, mass values are detected within each spectrum (several methods are available, depending on the nature of the data). In the second step, a chromatogram is constructed for each of the mass values which span over a certain time range. Finally, deconvolution algorithms are applied to each chromatogram to recognize the actual chromatographic peaks.<br/>
 					
-					<div class="owl-carousel owl-carousel-spaced" data-plugin-options='{"items": 3, "dots": "false"}' id="imgGallery">
+					<div class="owl-carousel owl-carousel-spaced" data-plugin-options='{"items": 3, "dots": "false"}' id="imgGallery_2">
 						<div>
 							<div class="portfolio-item img-thumbnail">
 								<a class="thumb-info" href="img/screenshots/MassDetection.png" title="Mass Detection">
@@ -278,6 +307,124 @@
 					<br/>
 					<h2>Peak List <strong>Methods</strong></h2>
 					
+					
+					<br/>
+					<h2>Statistical <strong>Analysis</strong></h2>
+					
+					
+					<br/>
+					<span class="anchor" id="TIC_XIC"></span>
+					<span class="anchor" id="Spectra"></span>
+					<span class="anchor" id="2D"></span>
+					<span class="anchor" id="3D"></span>
+					<span class="anchor" id="NeutralLoss"></span>
+					<span class="anchor" id="Scatter"></span>
+					<span class="anchor" id="Histogram"></span>
+					<span class="anchor" id="PeakIntensity"></span>
+					<h2>Data <strong>Visualization</strong></h2>
+					MZmine 2 can visualize your raw data together with peak picking and identification results, which is very useful for evaluating different peak detection methods. Plots can be exported to vector graphics for high quality printing.
+					
+					<div class="owl-carousel owl-carousel-spaced" data-plugin-options='{"items": 3, "dots": "false"}' id="imgGallery_3">
+						<div>
+							<div class="portfolio-item img-thumbnail">
+								<a class="thumb-info" href="img/screenshots/Chromatogram.png" title="Chromatogram plot">
+									<img alt="" class="img-responsive" src="img/screenshots/Chromatogram_S.png">
+									<span class="thumb-info-title">
+										<span class="thumb-info-inner">Chromatogram plot</span>
+									</span>
+									<span class="thumb-info-action">
+										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-search-plus"></i></span>
+									</span>
+								</a>
+								<br/>
+								<a class="thumb-info" href="img/screenshots/3Dpeak.png" title="3D view of peak">
+									<img alt="" class="img-responsive" src="img/screenshots/3Dpeak_S.png">
+									<span class="thumb-info-title">
+										<span class="thumb-info-inner">3D view of peak</span>
+									</span>
+									<span class="thumb-info-action">
+										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-search-plus"></i></span>
+									</span>
+								</a>
+								<br/>
+								<a class="thumb-info" href="img/screenshots/Spectrum.png" title="Spectra Visualizer">
+									<img alt="" class="img-responsive" src="img/screenshots/Spectrum_S.png">
+									<span class="thumb-info-title">
+										<span class="thumb-info-inner">Spectra Visualizer</span>
+									</span>
+									<span class="thumb-info-action">
+										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-search-plus"></i></span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="portfolio-item img-thumbnail">
+								<a class="thumb-info" href="img/screenshots/2D.png" title="2D plot of dataset">
+									<img alt="" class="img-responsive" src="img/screenshots/2D_S.png">
+									<span class="thumb-info-title">
+										<span class="thumb-info-inner">2D plot of dataset</span>
+									</span>
+									<span class="thumb-info-action">
+										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-search-plus"></i></span>
+									</span>
+								</a>
+								<br/>
+								<a class="thumb-info" href="img/screenshots/XIC.png" title="XIC Plot">
+									<img alt="" class="img-responsive" src="img/screenshots/XIC_S.png">
+									<span class="thumb-info-title">
+										<span class="thumb-info-inner">XIC Plot</span>
+									</span>
+									<span class="thumb-info-action">
+										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-search-plus"></i></span>
+									</span>
+								</a>
+								<br/>
+								<a class="thumb-info" href="img/screenshots/Histogram.png" title="Histogram">
+									<img alt="" class="img-responsive" src="img/screenshots/Histogram_S.png">
+									<span class="thumb-info-title">
+										<span class="thumb-info-inner">Histogram</span>
+									</span>
+									<span class="thumb-info-action">
+										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-search-plus"></i></span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="portfolio-item img-thumbnail">
+								<a class="thumb-info" href="img/screenshots/3D.png" title="3D view of dataset">
+									<img alt="" class="img-responsive" src="img/screenshots/3D_S.png">
+									<span class="thumb-info-title">
+										<span class="thumb-info-inner">3D view of dataset</span>
+									</span>
+									<span class="thumb-info-action">
+										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-search-plus"></i></span>
+									</span>
+								</a>
+								<br/>
+								<a class="thumb-info" href="img/screenshots/IntensityPlot.png" title="Intensity Plot">
+									<img alt="" class="img-responsive" src="img/screenshots/IntensityPlot_S.png">
+									<span class="thumb-info-title">
+										<span class="thumb-info-inner">Intensity Plot</span>
+									</span>
+									<span class="thumb-info-action">
+										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-search-plus"></i></span>
+									</span>
+								</a>
+								<br/>
+								<a class="thumb-info" href="img/screenshots/ScatterPlot.png" title="Scatter Plot">
+									<img alt="" class="img-responsive" src="img/screenshots/ScatterPlot_S.png">
+									<span class="thumb-info-title">
+										<span class="thumb-info-inner">Scatter Plot</span>
+									</span>
+									<span class="thumb-info-action">
+										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-search-plus"></i></span>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
 					
 				</div>
 
