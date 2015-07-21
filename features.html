@@ -306,49 +306,139 @@
 					
 					
 					<br/>
+					<span class="anchor" id="GapFilling"></span>
+					<span class="anchor" id="Isotopes"></span>
+					<span class="anchor" id="Filtering"></span>
+					<span class="anchor" id="Alignment"></span>
+					<span class="anchor" id="Normalization"></span>
+					<span class="anchor" id="Identification"></span>
 					<h2>Peak List <strong>Methods</strong></h2>
+					There are several modules for processing of peaks lists, including:<br/>
+					<div class="col-md-4">
+						<ul>
+							<li>Gap Filling</li>
+							<li>Isotope Detection</li>
+							<li>Filtering</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul>
+							<li>Alignment</li>
+							<li>Normalization</li>
+							<li>Identification</li>
+						</ul>
+					</div><br/>
+					<br clear="both" /><br/>
 					
+					Identification of peaks can be performed by using any of the following:<br/>
+					<div class="col-md-4">
+						<ul>
+							<li>Custom database search</li>
+							<li>Online database search (see below)</li>
+							<li>Fragment or adduct search</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul>
+							<li><a href="http://www.ncbi.nlm.nih.gov/pubmed/22111785" target="_new">CAMERA</a></li>
+							<li><a href="http://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:ms-search" target="_blank">NIST MS Search</a></li>
+							<li>Various prediction tools</li>
+						</ul>
+					</div>
+					<br clear="both" /><br/>
+					
+					Currently the following online databases are supported. Support for other databases may be implemented as additional plugins.
+					<div class="col-md-4">
+						<ul>
+							<li><a href="http://www.chemspider.com" target="_blank">ChemSpider</a></li>
+							<li><a href="http://www.hmdb.ca" target="_blank">HMDB</a></li>
+							<li><a href="http://www.genome.jp/kegg" target="_blank">KEGG</a></li>
+							<li><a href="http://www.lipidmaps.org" target="_blank">LipidMaps</a></li>
+							<li><a href="http://www.massbank.jp/?lang=en" target="_blank">MassBank</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul>
+							<li><a href="http://metlin.scripps.edu" target="_blank">METLIN</a></li>
+							<li><a href="http://plantcyc.org" target="_blank">PlantCyc</a></li>
+							<li><a href="http://pubchem.ncbi.nlm.nih.gov" target="_blank">PubChem</a></li>
+							<li><a href="http://www.ymdb.ca" target="_blank">YMDB</a></li>
+						</ul>
+					</div>
+					<br clear="both" />
 					
 					<br/>
-					<h2>Statistical <strong>Analysis</strong></h2>
-					MZmine 2 contains basic methods for statistical analysis of processed data. Processed data can also easily be exported to third-party statistical software for advanced analysis.<br/><br/>
-					
 					<span class="anchor" id="CV"></span>
-					<h4 style="margin-bottom:0px;">CV Plot</h4>
-					X
-					<br/><br/>
-					
 					<span class="anchor" id="Logratio"></span>
-					<h4 style="margin-bottom:0px;">Logratio Analysis</h4>
-					X
-					<br/><br/>
-					
 					<span class="anchor" id="PCA"></span>
-					<h4 style="margin-bottom:0px;">Principal Component Analysis - PCA</h4>
-					X
-					<br/><br/>
-					
 					<span class="anchor" id="CDA"></span>
-					<h4 style="margin-bottom:0px;">Curvilinear Distant Analysis - CDA</h4>
-					X
-					<br/><br/>
-					
 					<span class="anchor" id="SammonProjection"></span>
-					<h4 style="margin-bottom:0px;">Sammon's Projection</h4>
-					X
-					<br/><br/>
-					
 					<span class="anchor" id="Clustering"></span>
-					<h4 style="margin-bottom:0px;">Clustering</h4>
-					X
-					<br/><br/>
-					
 					<span class="anchor" id="Heatmap"></span>
-					<h4 style="margin-bottom:0px;">Heat Maps</h4>
-					X
-					<br/><br/>
+					<h2>Statistical <strong>Analysis</strong></h2>
+					MZmine 2 contains basic methods for statistical analysis of processed data. Processed data can also easily be exported to third-party statistical software for advanced analysis.<br/>
+					<div class="col-md-4">
+						<ul>
+							<li>CV Plots</li>
+							<li><a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">Cluster Analysis</a></li>
+							<li><a href="https://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction#Curvilinear_distance_analysis" target="_blank">Curvilinear Distant Analysis (CDA)</a></li>
+							<li>Logratio Plots</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul>
+							<li><a href="https://en.wikipedia.org/wiki/Heat_map" target="_blank">Heat Maps</li>
+							<li><a href="https://en.wikipedia.org/wiki/Principal_component_analysis" target="_blank">Principal Component Analysis (PCA)</a></li>
+							<li><a href="https://en.wikipedia.org/wiki/Sammon_mapping" target="_blank">Sammon's Projection</a></li>
+						</ul>
+					</div>
+					<br clear="both" />
 					
-					<br/>
+					<div class="col-md-12">
+						<div class="owl-carousel owl-carousel-spaced" data-plugin-options='{"items": 3, "dots": "false"}' id="imgGallery_3">
+						<div>
+							<div class="portfolio-item img-thumbnail">
+								<a class="thumb-info" href="img/screenshots/PCA.png" title="Principal Component Analysis - PCA">
+									<img alt="" class="img-responsive" src="img/screenshots/PCA_S.png">
+									<span class="thumb-info-title">
+										<span class="thumb-info-inner">PCA Analysis</span>
+									</span>
+									<span class="thumb-info-action">
+										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-search-plus"></i></span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="portfolio-item img-thumbnail">
+								<a class="thumb-info" href="img/screenshots/LogratioPlot.png" title="Logratio plot of two samples">
+									<img alt="" class="img-responsive" src="img/screenshots/LogratioPlot_S.png">
+									<span class="thumb-info-title">
+										<span class="thumb-info-inner">Logratio plot</span>
+									</span>
+									<span class="thumb-info-action">
+										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-search-plus"></i></span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="portfolio-item img-thumbnail">
+								<a class="thumb-info" href="img/screenshots/Cluster.png" title="Hierachical Cluster">
+									<img alt="" class="img-responsive" src="img/screenshots/Cluster_S.png">
+									<span class="thumb-info-title">
+										<span class="thumb-info-inner">Clustering</span>
+									</span>
+									<span class="thumb-info-action">
+										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-search-plus"></i></span>
+									</span>
+								</a>
+							</div>
+						</div>
+						</div>
+					</div>
+					<br/><br clear="both" />
+					
 					<span class="anchor" id="TIC_XIC"></span>
 					<span class="anchor" id="Spectra"></span>
 					<span class="anchor" id="IDA"></span>
@@ -361,7 +451,7 @@
 					<h2>Data <strong>Visualization</strong></h2>
 					MZmine 2 can visualize your raw data together with peak picking and identification results. This is very useful for evaluating different peak detection methods and getting an overview of the data. Plots can be exported to vector graphics for high quality printing.
 					
-					<div class="owl-carousel owl-carousel-spaced" data-plugin-options='{"items": 3, "dots": "false"}' id="imgGallery_3">
+					<div class="owl-carousel owl-carousel-spaced" data-plugin-options='{"items": 3, "dots": "false"}' id="imgGallery_4">
 						<div>
 							<div class="portfolio-item img-thumbnail">
 								<a class="thumb-info" href="img/screenshots/Chromatogram.png" title="Chromatogram plot">

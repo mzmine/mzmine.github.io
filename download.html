@@ -211,7 +211,7 @@
 					<h2>Installation</h2>
 					<h5 style="padding-top:10px;">Prerequisites</h5>
 					<p style="line-height: 30px;">
-						<i class="fa fa-arrow-circle-right" style="color:#0088cc;padding-left:10px;"></i>&nbsp; Java SE runtime (JRE) 7 or later. Verify your Java version <a href="https://www.java.com/en/download/installed.jsp?detect=jre" target="_blank">here</a>.<br/>
+						<i class="fa fa-arrow-circle-right" style="color:#0088cc;padding-left:10px;"></i>&nbsp; Java SE runtime (JRE) 7 or later - remember to select the 64-bit version if your OS is 64-bit! Verify your Java version <a href="https://www.java.com/en/download/installed.jsp?detect=jre" target="_blank">here</a>.<br/>
 						<i class="fa fa-arrow-circle-right" style="color:#0088cc;padding-left:10px;"></i>&nbsp;  (Optional) <a href="http://www.r-project.org/" target="_blank">Install R</a>. R is required for certain modules (e.g. baseline correction and heat maps).<br/>
 						<i class="fa fa-arrow-circle-right" style="color:#0088cc;padding-left:10px;"></i>&nbsp;  (Optional) Install the required R packages using the following commands in the R console:
 					</p>
@@ -225,7 +225,7 @@
 					<h5 style="padding-top:20px;">MZmine 2 Installation</h5>
 					<p style="line-height: 30px;">
 						<i class="fa fa-arrow-circle-right" style="color:#0088cc;padding-left:10px;"></i>&nbsp; Download the latest MZmine version from <a href="https://github.com/mzmine/mzmine2/releases" target="_blank">here</a> and unpack it to a folder of your choice.<br/>
-						<i class="fa fa-arrow-circle-right" style="color:#0088cc;padding-left:10px;"></i>&nbsp; Edit the start-up script in a text editor to adjust the below
+						<i class="fa fa-arrow-circle-right" style="color:#0088cc;padding-left:10px;"></i>&nbsp; (Optional) Edit the start-up script in a text editor to adjust the below
 						parameters.<br/>
 					</p>
 					<p style="line-height:30px;padding-left:30px;">
@@ -235,17 +235,8 @@
 						<br/>
 						<span style="color:#0088cc;"><strong><u>Parameters:</u></strong></span><br/>
 						<span style="color:#0088cc;">HEAP_SIZE</span><img src="img/blank.png" width="104" height="1" alt="">Adjust to define the total amount of memory available to MZmine<br/>
-						<span style="color:#0088cc;">JAVA_COMMAND</span><img src="img/blank.png" width="61" height="1" alt="">Adjust if you wish to run a specific Java Virtual Machine (Usually not necessary to modify)<br/>
-						<span style="color:#0088cc;">R_HOME</span><img src="img/blank.png" width="116" height="1" alt="">Directory where R is installed. For Windows it will typically be C:\Program Files\R\R-3.2.0<br/>
-						<p style="line-height:25px;padding-left:30px;">
-						<span style="color:#0088cc;">R_LIBS_USER</span><img src="img/blank.png" width="89" height="1" alt="">Directory in which R installs third-party packages. It's usually a subdirectory of your personal directory or of f %R_HOME%<br/><img src="img/blank.png" width="173" height="1" alt="">e.g. %USERPROFILE%\Documents\R\win-library\2.2.0 or %R_HOME%\library<br/>
-						</p>
-						<p style="line-height:25px;padding-left:30px;">
-						<span style="color:#0088cc;">PATH</span><img src="img/blank.png" width="138" height="1" alt="">Append the directory that contains R's libraries. This will be a subdirectory of %R_HOME%<br/><img src="img/blank.png" width="174" height="1" alt="">e.g. R_HOME%\bin\i386 for 32-bit Windows and %R_HOME%\bin\x64 for 64-bit Windows<br/>
-						</p>
-						<p style="line-height:25px;padding-left:30px;">
-						<span style="color:#0088cc;">JRI_LIB_PATH</span><img src="img/blank.png" width="88" height="1" alt="">This is the directory where rJava has installed its JRI libraries. It will be a subdirectory of %R_LIBS_USER%<br/><img src="img/blank.png" width="174" height="1" alt="">e.g. %R_LIBS_USER%\rJava\jri\i386 for 32-bit Windows and %R_LIBS_USER%\rJava\jri\x64 for 64-bit Windows<br/>
-						</p>
+						<span style="color:#0088cc;">TMP_FILE_DIRECTORY</span><img src="img/blank.png" width="30" height="1" alt="">Location where temporary files will be stored.<br/>
+						<span style="color:#0088cc;">JAVA_COMMAND</span><img src="img/blank.png" width="62" height="1" alt="">Adjust if you wish to run a specific Java Virtual Machine (Usually not necessary to modify)<br/>
 					</p><br/><br/>
 					
 					<h2>Example <strong>Data Set</strong></h2>
