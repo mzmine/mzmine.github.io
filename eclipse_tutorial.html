@@ -212,21 +212,14 @@
 					Note: This tutorial was written using Eclipse Mars (4.5), but the procedure should basically be the same if you use any other version.
 					<br/><br/>
 
-					<h4>Step 2: Add EGit support to Eclipse</h4>
-					After starting Eclipse, go to the menu "Help" and select "Install New Software". Click on the "Add..." button in the top right corner to add a new repository with the following information - see more <a href="http://www.eclipse.org/egit/download/">here</a>:<br/>
-					<img alt="Eclipse" src="img/eclipse/Eclipse-EGit.png"><br/><br/>
-					After the list of available software is updated from the site, select the "Eclipse Git Team Provider" item and install it.<br/>
-					<img alt="Eclipse" src="img/eclipse/Eclipse-Software.png"><br/>
-					<br/><br/>
-
-					<h4>Step 3: Fork the repositories</h4>
+					<h4>Step 2: Fork the repositories</h4>
 					Make a copy of the repositories you want to work with on GitHub - see <a href="https://help.github.com/articles/fork-a-repo/">this article</a>. This will allow you to freely experiment with changes without affecting the original projects.<br/>
 					Depending on what project you want to work on you will need to fork these repositiories:<br/>
 					MZmine 2: <a href="https://github.com/mzmine/mzmine2">MZmine 2</a><br/>
 					MZmine 3: <a href="https://github.com/mzmine/mzmine3">MZmine 3</a> and <a href="https://github.com/msdk/msdk">MSDK</a>
 					<br/><br/>
 
-					<h4>Step 4: Download the source codes from GitHub</h4>
+					<h4>Step 3: Download the source codes from GitHub</h4>
 					In Eclipse, choose the menu item "Import" under the "File" menu and select "Project from Git" and then select "Clone URI".<br/>
 					<img alt="Eclipse" src="img/eclipse/Eclipse-Import.png"><br/><br/>
 					Enter the url to your copy of the repository and enter your username and password for GitHub under authentication.
@@ -238,14 +231,14 @@
 					<img alt="Eclipse" src="img/eclipse/Eclipse-Wizard2.png"><br/>
 					<br/><br/>
 
-					<h4>Step 5: Configure your project in Eclipse</h4>
+					<h4>Step 4: Configure your project in Eclipse</h4>
 					MZmine 2 and MZmine 3 are using the Maven tool for building and tracking external dependencies. Please right click on your project and select "Convert to Maven Project" undet the "Configure" menu. Eclipse will then download all the dependencies and build the source code.
 					<img alt="Eclipse" src="img/eclipse/Eclipse-Maven.png"><br/>
 					<br/><br/>
 					<strong>Note:</strong> If you are planning on working with the MSDK repository then after converting your MSDK project to a Maven Project, right click on the project and select "Import". Now select "Existing Maven Projects" under "Maven". In the next window, select all projects and click on the finish button.
 					<br/><br/>
 
-					<h4>Step 6: Setup debug configurations</h4>
+					<h4>Step 5: Setup debug configurations</h4>
 					Click on the bug icon and choose "Debug Configurations...". Here you can add new debug configurations for your project. The settings will depend on which software you will be working with. Please fill in the settings as shown below for MZmine 2 or MZmine 3.
 					<br/><br/>
 					<strong>MZmine 2:</strong><br/>
@@ -257,7 +250,7 @@
 					<img alt="Eclipse" src="img/eclipse/Eclipse-MZmine3-2.png"><br/>
 					<br/>
 
-					<h4>Step 7: Contributing your changes</h4>
+					<h4>Step 6: Contributing your changes</h4>
 					If you are new to GitHub then please see this <a href="https://guides.github.com/introduction/flow/">tutorial</a> to get an understanding of the workflow on getting your changes merged into the projects main repository.<br/><br/>
 					You contribute with your changes by commiting them to your local repository on GitHub. This is done by right clicking on your project and selecting "Team" and then "Commit...". On you repository on GitHub you can then make a pull request to have your changes merged with the main repository.<br/><br/>
 					<img alt="Eclipse" src="img/eclipse/Eclipse-Commit.png"><br/>
