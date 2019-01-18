@@ -203,34 +203,29 @@
 				</section>
 
 				<div class="container">
-					<h2><strong>User</strong> Support</h2>
-					The manual and various tutorials on how to use MZmine can be found <a href="documentation.html">here</a>.<br/>
-					Help on installing MZmine can be found <a href="download.html#Installation">here</a>.
+					Mass spectrometry is an analytical technique that measures the mass of small molecules with high precision. The data coming from mass spectrometry instruments is complex and multi-dimensional. Mass spectrometry development kit (<a href="https://msdk.github.io">MSDK</a>) is a Java library of algorithms for processing such mass spectrometry data. The goals of the library are to provide a flexible data model with Java interfaces for mass-spectrometry related objects (including raw spectra, processed data sets, identification results etc.) and to integrate the existing algorithms that are currently scattered around various Java-based graphical tools. MZmine is an open-source software for mass-spectrometry data processing. A new version, MZmine 3, which is currently under development, is based on JavaFX for GUI and on MSDK for data processing algorithms.
 					<br/><br/>
-					If you still have questions or need help then please contact the <a href="https://github.com/mzmine/mzmine2/issues">developers</a>.
+					<h2>Project: MSDK - Feature Detection</h2>
+					Brief explanation: Provide a native Java implementation of some popular LC-MS feature detection algorithms from the R world (centWave, massifquant, CAMERA, etc.) [4]. Further development of ADAP-3D module [5] for intelligent, parameter-less feature detection.
 					<br/><br/>
+					Prerequisites: Java, preferably some knowledge about mass spectrometry
+					<br/><br/>
+					Mentor: Tomas Pluskal, <a href="mailto:plusik@gmail.com">plusik@gmail.com</a>
 					
-					<span class="anchor" id="Issues"></span>
-					<h2><strong>How to</strong> report issues</h2>
-					If you encounter a problem with MZmine then please file a new issue <a href="https://github.com/mzmine/mzmine2/issues" target="_blank">here</a>. Please include the below information with your report.
+					<h2>Project: MSDK - Spectral Database Search</h2>
+					Brief explanation: Develop new MSDK modules for spectral search in offline and online databases.
 					<br/><br/>
-					<ol>
-					<li class="lispaced"><strong>Your MZmine version</strong></li>
-					<li class="lispaced"><strong>Your OS version</strong> - is it 32-bit or 64-bit?</li>
-					<li class="lispaced"><strong>The exact output</strong> of the following two commands:<br>
-						<code>java -version</code><br>
-						<code>R --version</code>
-					</li>
-					<li class="lispaced"><strong>Screenshots of all the error messages or unexpected output</strong></li>
-					<li class="lispaced"><strong>The log messages reported in the MZmine console window</strong></li>
-					<li class="lispaced">
-						<strong>The exact steps you took until you encountered the problem.</strong><br/>
-						Please list all the relevant parameter values you set for each data processing step. 
-						If you feel that the results provided by MZmine were wrong, please describe exactly why you think they were wrong and how they differ from the results you expected.
-						It will help us a lot in tracking down the problem if you upload your MZmine project file to <a href="http://www.dropbox.com/" target="_blank">Dropbox</a> or other storage system</a> so we can reproduce your steps.
-					</li>
-					</ol>
+					Prerequisites: Java
+					<br/><br/>
+					Mentor: Tomas Pluskal, <a href="mailto:plusik@gmail.com">plusik@gmail.com</a>
 					
+					<h2>Project: MZmine - New Visualization Modules</h2>
+					Brief explanation: Implement new, JavaFX-based visualization modules for MZmine such as Cloud Plot [12] or spectral similarity tree imaging.
+					<br/><br/>
+					Prerequisites: Java (experience with JavaFX is helpful but not required)
+					<br/><br/>
+					Mentor: Tomas Pluskal, <a href="mailto:plusik@gmail.com">plusik@gmail.com</a>
+										
 				</div>
 				<br/>
 			</div>
