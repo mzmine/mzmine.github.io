@@ -206,8 +206,8 @@
 					<img src="https://developers.google.com/open-source/gsoc/resources/downloads/GSoC-logo-horizontal-800.png" />
 					<br/><br/>
 					This page is for collecting project ideas that can be implemented during the <a href="https://summerofcode.withgoogle.com">Google Summer of Code</a>. 
-					In 2017, 2018, and 2019, MZmine participated in GSoC under the <a href="http://wiki.openchemistry.org/GSoC_Ideas_2018">OpenChemistry</a> umbrella organization.
-					Our experience has been fantastic, and in 2020, we are applying as an independent organization.
+					In 2017, 2018, and 2019, MZmine participated in GSoC under the <a href="https://www.openchemistry.org">OpenChemistry</a> umbrella organization.
+					Our experience has been fantastic, and in 2020, we are participating as an independent organization.
 					<br/><br/>
 					<br/><br/>				
 				
@@ -232,42 +232,50 @@
 					
 					<h1>Project ideas</h1>
 					
-					<h2>Project: Feature Detection</h2>
-					Brief explanation: Provide a native Java implementation of some popular LC-MS feature detection algorithms from the R world (<a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-504">centWave</a>, <a href="https://academic.oup.com/bioinformatics/article/30/18/2636/2475626">massifquant</a>, <a href="https://pubs.acs.org/doi/abs/10.1021/ac202450g">CAMERA</a>, etc.)
+					<h2>Project: cliqueMS implementation</h2>
+					Brief explanation: Provide a native Java implementation of the <a href="https://academic.oup.com/bioinformatics/article/35/20/4089/5418951">cliqueMS</a> algorithm and corresponding GUI elements in MZmine.
 					<br/>
-					Prerequisites: Java, preferably basic knowledge about mass spectrometry or signal processing
+					Prerequisites: Java, JavaFX
 					<br/>
-					Mentors: Adam Tenderholt (<a href="mailto: adam.tenderholt@veritomyx.com">adam.tenderholt@veritomyx.com</a>)
-					<br/><br/>					
+					Mentors: Oscar Yanes (<a href="mailto:oscar.yanes@urv.cat">oscar.yanes@urv.cat</a>)
+					<br/><br/>
 					
-					<h2>Project: Spectral Database Search</h2>
-					Brief explanation: Develop new MSDK modules for spectral search in offline and online databases, implement algorithms for spectral matching, and add the corresponding GUI elements to MZmine.
+					<h2>Project: Automatic mass calibration support</h2>
+					Brief explanation: Develop new modules for mass spectra calibration using internal standards and statistical error detection. Add the corresponding GUI elements to MZmine. 
 					<br/>
 					Prerequisites: Java, JavaFX (preferred)
 					<br/>
-					Mentor: Robin Schmid (<a href="mailto:robinschmid@uni-muenster.de">robinschmid@uni-muenster.de</a>), Louis Felix Nothias (<a href="lnothiasscaglia@ucsd.edu">lnothiasscaglia@ucsd.edu</a>)
+					Mentor: Albert Rivas Ubach (<a href="mailto:albert.rivas.ubach@pnnl.gov">albert.rivas.ubach@pnnl.gov</a>)
+					<br/><br/>
+
+					<h2>Project: Feature detection algorithms</h2>
+					Brief explanation: Provide a native Java implementation of some popular LC-MS feature detection algorithms like <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-504">centWave</a>, <a href="https://academic.oup.com/bioinformatics/article/30/18/2636/2475626">massifquant</a>, <a href="http://link.springer.com/10.1007/s10337-019-03766-1">HDBSCAN</a>, etc.
+					<br/>
+					Prerequisites: Java, preferably basic knowledge about mass spectrometry or signal processing
+					<br/>
+					Mentors: Xiuxia Du (<a href="mailto:xiuxia.du@uncc.edu">xiuxia.du@uncc.edu</a>)
+					<br/><br/>					
+					
+					<h2>Project: mzTab-M and mzMLb file format support</h2>
+					Brief explanation: </a href="https://pubs.acs.org/doi/10.1021/acs.analchem.8b04310">mzTab-M</a> is a new tabulated data format for metabolomics experiments. <a href="https://www.biorxiv.org/content/10.1101/2020.02.13.947218v1.full"mzMLb</a> is a new format for raw mass spectrometry datasets. Add support for mzTab-M and mzMLb formats and corresponding GUI elements to MZmine. A Java library for parsing mzTab-M already <a href="https://github.com/nilshoffmann/jmzTab-m">exists</a>.
+					<br/>
+					Prerequisites: Java
+					<br/>
+					Mentor: Nils Hoffmann (<a href="mailto:nils.hoffmann@isas.de">nils.hoffmann@isas.de</a>)
 					<br/><br/>					
 
 					<h2>Project: KNIME integration</h2>
-					Brief explanation: Develop an integration layer for MSDK algorithms into the workflow platform <a href="https://www.knime.com">KNIME</a>.
+					Brief explanation: Develop an integration layer for MZmine algorithms into the workflow platform <a href="https://www.knime.com">KNIME</a>.
 					<br/>
 					Prerequisites: Java
 					<br/>
 					Mentors: Tomáš Pluskal (<a href="mailto:pluskal@wi.mit.edu">pluskal@wi.mit.edu</a>)
 					<br/><br/>					
-					
-					<h2>Project: mzTab-M 2.0 support</h2>
-					Brief explanation: mzTab-M is a new tabulated data format for metabolomics experiments. Add support for mzTab-M to MSDK and corresponding GUI elements to MZmine. A Java library for parsing mzTab-M already <a href="https://github.com/nilshoffmann/jmzTab-m">exists</a>.
-					<br/>
-					Prerequisites: Java
-					<br/>
-					Mentor: Nils Hoffmann (<a href="nils.hoffmann@isas.de">nils.hoffmann@isas.de</a>)
-					<br/><br/>					
 
 					<h2>Project: New Visualization Modules</h2>
-					Brief explanation: Implement new, JavaFX-based visualization modules for MZmine such as 3D plot and Cloud Plot.
+					Brief explanation: Implement new JavaFX-based visualization modules for MZmine such as <a href="https://pubs.acs.org/doi/10.1021/ac3029745">Cloud Plot</a> and <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2117-2">Robust Volcano Plot</a>.
 					<br/>
-					Prerequisites: Java, JavaFX (preferred), experience with 3D graphics helpful but not required
+					Prerequisites: Java, JavaFX (preferred)
 					<br/>
 					Mentor: Ansgar Korf (<a href="mailto:a_korf03@uni-muenster.de">a_korf03@uni-muenster.de</a>)
 					<br/><br/>
@@ -277,16 +285,9 @@
 					<br/>
 					Prerequisites: Java, JavaFX
 					<br/>
-					Mentor: Dmitriy Avtonomov (<a href="dmitriy.avtonomov@gmail.com">dmitriy.avtonomov@gmail.com</a>)
+					Mentor: Aivett Bilbao Pena (<a href="mailto:aivett.bilbao@pnnl.gov">aivett.bilbao@pnnl.gov</a>)
 					<br/><br/>
 
-					<h2>Project: Correlation Analysis</h2>
-					Brief explanation: Develop new modules for correlation-based identification of related mass spectrometry signals and add the corresponding GUI elements to MZmine. 
-					<br/>
-					Prerequisites: Java, JavaFX (preferred)
-					<br/>
-					Mentor: Dmitriy Avtonomov (<a href="dmitriy.avtonomov@gmail.com">dmitriy.avtonomov@gmail.com</a>)
-					<br/><br/>
 					
 				</div>
 				<br/>
