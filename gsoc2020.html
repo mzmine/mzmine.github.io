@@ -233,11 +233,12 @@
 					<h1>Project ideas</h1>
 					
 					<h2>cliqueMS implementation</h2>
-					Brief explanation: Provide a native Java implementation of the <a href="https://academic.oup.com/bioinformatics/article/35/20/4089/5418951">cliqueMS</a> algorithm and corresponding GUI elements in MZmine.
+					Brief explanation: Provide a native Java implementation of the <a href="https://academic.oup.com/bioinformatics/article/35/20/4089/5418951">cliqueMS</a> algorithm and corresponding GUI elements (e.g., a graph (network) visualization module) in MZmine. 
+					The grouping and annotation results from CliqueMS could then be exported for subsequent analysis in the <a href="https://ccms-ucsd.github.io/GNPSDocumentation/fbmn-iin/">ion identity molecular networking workflow</a> on the <a href="https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp">GNPS web-server</a>.
 					<br/>
 					Prerequisites: Java, JavaFX
 					<br/>
-					Mentor: Oscar Yanes (<a href="mailto:oscar.yanes@urv.cat">oscar.yanes@urv.cat</a>)
+					Mentor: Oscar Yanes (<a href="mailto:oscar.yanes@urv.cat">oscar.yanes@urv.cat</a>), Robin Schmid (<a href="mailto:robinschmid@uni-muenster.de">robinschmid@uni-muenster.de</a>)
 					<br/><br/><br />
 					
 					<h2>Automatic mass calibration support</h2>
@@ -257,15 +258,19 @@
 					<br/><br/><br />					
 					
 					<h2>mzTab-M and mzMLb file format support</h2>
-					Brief explanation: <a href="https://pubs.acs.org/doi/10.1021/acs.analchem.8b04310">mzTab-M</a> is a new tabulated data format for metabolomics experiments. <a href="https://www.biorxiv.org/content/10.1101/2020.02.13.947218v1.full">mzMLb</a> is a new format for raw mass spectrometry datasets. Add support for mzTab-M and mzMLb formats and corresponding GUI elements to MZmine. A Java library for parsing mzTab-M already <a href="https://github.com/nilshoffmann/jmzTab-m">exists</a>.
+					Brief explanation: <a href="https://pubs.acs.org/doi/10.1021/acs.analchem.8b04310">mzTab-M</a> is a new tabulated data format for metabolomics experiments. <a href="https://www.biorxiv.org/content/10.1101/2020.02.13.947218v1.full">mzMLb</a> is a new format for raw mass spectrometry datasets. Add support for mzTab-M and mzMLb formats and corresponding GUI elements to MZmine. 
+					A Java library for parsing mzTab-M already <a href="https://github.com/nilshoffmann/jmzTab-m">exists</a>. 
+					After the implementation of mzTab-M, to reduce the memory footprint, this format could be used to export all feature lists into temporary files that are only loaded into memory when needed. The goal would be to increase the maximum number of samples MZmine can process. 
+					The final idea is to change the project file structure and make use of the mzTab-M format and spectral data formats (mzML, mzMLb, [..]) to reduce the project file size and time for loading and saving. 
 					<br/>
 					Prerequisites: Java
 					<br/>
-					Mentor: Nils Hoffmann (<a href="mailto:nils.hoffmann@isas.de">nils.hoffmann@isas.de</a>)
+					Mentor: Nils Hoffmann (<a href="mailto:nils.hoffmann@isas.de">nils.hoffmann@isas.de</a>), Tomáš Pluskal (<a href="mailto:pluskal@wi.mit.edu">pluskal@wi.mit.edu</a>)
 					<br/><br/><br />					
 
 					<h2>Spectral identification</h2>
-					Brief explanation: Improve the existing support for mass spectral databases by adding more databases (e.g., <a href="https://massbank.eu/MassBank/">Massbank Europe</a>), matching algorithms (e.g., <a href="https://pubs.acs.org/doi/10.1021/ac900954d">X-Rank</a>), fine isotope matching, etc. Add support for finding spectra using <a href="https://splash.fiehnlab.ucdavis.edu">SPLASH</a> or <a href="https://metabolomics-usi.ucsd.edu">Metabolomics Spectrum Identifier Resolver</a>.
+					Brief explanation: Improve the existing support for mass spectral databases by adding more database formats (e.g., <a href="https://massbank.eu/MassBank/">Massbank Europe</a>), matching algorithms (e.g., <a href="https://pubs.acs.org/doi/10.1021/ac900954d">X-Rank</a>), fine isotope matching, etc. 
+					Add support for finding spectra using <a href="https://splash.fiehnlab.ucdavis.edu">SPLASH</a> or <a href="https://metabolomics-usi.ucsd.edu">Metabolomics Spectrum Identifier Resolver</a>. 
 					<br/>
 					Prerequisites: Java
 					<br/>
@@ -281,19 +286,22 @@
 					<br/><br/><br />
 			
 					<h2>High-resolution and multiple-charge deisotoping</h2>
-					Brief explanation: Develop a new module for ultra-high resolution isotope pattern recognition.
+					Brief explanation: Develop a new module for ultra-high mass resolution isotope pattern recognition and filtering. One task is to detect the isotope pattern of chemical compounds with their precise signal ratios (averaged over multiple mass spectra) to help annotate the molecular formula of this compound. 
+                    			The other task is to filter out isotope signals that originate from the same compound to improve and dereplicate downstream analysis. The challenge is to distinguish whether a signal originates from a monoisotopic compound or another isotope. In complex samples, the isotope pattern of multiple compounds and ion species might overlap. 
 					<br/>
 					Prerequisites: Java
 					<br/>
-					Mentor: Daniel Petras (<a href="mailto:dpetras@ucsd.edu">dpetras@ucsd.edu</a>)
+					Mentor: Daniel Petras (<a href="mailto:dpetras@ucsd.edu">dpetras@ucsd.edu</a>), Robin Schmid (<a href="mailto:robinschmid@wwu.de">robinschmid@wwu.de</a>)
 					<br/><br/><br />
 	
 					<h2>New visualization modules</h2>
 					Brief explanation: Implement new JavaFX-based visualization modules for MZmine such as <a href="https://pubs.acs.org/doi/10.1021/ac3029745">Cloud Plot</a> and <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2117-2">Robust Volcano Plot</a>.
+					This project could also include the development of a new modular JavaFX data analysis window (e.g., using <a href="https://github.com/RobertBColton/DockFX">DockFX</a>). 
+					Such a window would combine different charts (spectra, chromatograms, statistics, [..]) and tables, and create links and controls between them.
 					<br/>
 					Prerequisites: Java, JavaFX
 					<br/>
-					Mentor: Ansgar Korf (<a href="mailto:a_korf03@uni-muenster.de">a_korf03@uni-muenster.de</a>)
+					Mentor: Ansgar Korf (<a href="mailto:a_korf03@uni-muenster.de">a_korf03@uni-muenster.de</a>), Robin Schmid (<a href="mailto:robinschmid@wwu.de">robinschmid@wwu.de</a>
 					<br/><br/><br />
 
 					<h2>Ion mobility data support</h2>
