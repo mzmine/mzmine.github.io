@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- Basic -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>MZmine 2 - Support</title>
+		<meta name="description" content="MZmine 2 is an open-source software for mass spectrometry data processing.">
+
+		<!-- Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="#0088cc">
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#0088cc">
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="favicon.ico" />
+		
+		<!-- Web Fonts  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+		
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css" media="screen">
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css" media="screen">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" media="screen">
+		
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css" />
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-animate.css" />
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="css/skins/default.css" />
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+		
+		<!--[if IE]>
+			<link rel="stylesheet" href="css/ie.css">
+		<![endif]-->
+
+		<!--[if lte IE 8]>
+			<script src="vendor/respond/respond.js"></script>
+			<script src="vendor/excanvas/excanvas.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<div class="body">
+			<header id="header">
+				<div class="container">
+					<h1 class="logo">
+						<a href="/">
+							<img alt="QC" width="427" height="99" class="logo-normal" data-sticky-width="237" data-sticky-height="55" src="img/logo.png">
+							<img alt="QC" width="237" height="55" class="logo-sticky" src="img/logo.png">
+						</a>
+					</h1>
+					<button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
+						<i class="fa fa-bars"></i>
+					</button>
+				</div>
+				<div class="navbar-collapse nav-main-collapse collapse">
+					<div class="container">
+						<nav class="nav-main mega-menu">
+							<ul class="nav nav-pills nav-main" id="mainMenu">
+								<li>
+									<a href="/">Home</a>
+								</li>
+								<li class="dropdown mega-menu-item mega-menu-fullwidth">
+									<a  class="dropdown-toggle" href="features.html">
+										Features
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<div class="mega-menu-content">
+												<div class="row">
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">General Features</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#FileFormats">Raw data file formats</a></li>
+																	<li><a href="features.html#ImportExport">Import and Export</a></li>
+																	<li><a href="features.html#Batch">Batch Processing</a></li>
+																</ul>
+																<br/>
+																<span class="mega-menu-sub-title">Raw Data Methods</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#RawFiltering">Filtering & Smoothing</a></li>
+																	<li><a href="features.html#RawDetection">Peak Detection</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Peak List Methods</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#GapFilling">Gap Filling</a></li>
+																	<li><a href="features.html#Isotopes">Isotope Detection</a></li>
+																	<li><a href="features.html#Filtering">Filtering</a></li>
+																	<li><a href="features.html#Alignment">Alignment</a></li>
+																	<li><a href="features.html#Normalization">Normalization</a></li>
+																	<li><a href="features.html#Identification">Identification</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Statistical Analysis</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#CV">CV Plot</a></li>
+																	<li><a href="features.html#Logratio">Logratio Analysis</a></li>
+																	<li><a href="features.html#PCA">Principal Component Analysis (PCA)</a></li>
+																	<li><a href="features.html#CDA">Curvilinear Distant Analysis (CDA)</a></li>
+																	<li><a href="features.html#SammonsProjection">Sammon's Projection</a></li>
+																	<li><a href="features.html#Clustering">Clustering</a></li>
+																	<li><a href="features.html#Heatmap">Heat Map Plot</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Visualization</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#TIC_XIC">TIC/XIC Visualizer</a></li>
+																	<li><a href="features.html#Spectra">Spectra Visualizer</a></li>
+																	<li><a href="features.html#IDA">IDA Visualizer</a></li>
+																	<li><a href="features.html#2D">2D Visualizer</a></li>
+																	<li><a href="features.html#3D">3D Visualizer</a></li>
+																	<li><a href="features.html#NeutralLoss">Neutral Loss Visualizer</a></li>
+																	<li><a href="features.html#Scatter">Scatter Plot</a></li>
+																	<li><a href="features.html#Histogram">Histogram Plot</a></li>
+																	<li><a href="features.html#PeakIntensity">Peak Intensity Plot</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>								
+								<li class="dropdown">
+									<a class="dropdown-toggle" href="download.html">
+										Download
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="download.html">Download</a></li>
+										<li><a href="changelog.html">Changelog</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="development.html">Development</a>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" href="support.html">
+										Support
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="support.html">Support</a></li>
+										<li><a href="documentation.html">Documentation</a></li>
+										<li><a href="support.html#Issues">Issues</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="contributors.html">Contributors</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<div role="main" class="main">
+
+				
+				<section class="page-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="breadcrumb">
+									<li><a href="/">Home</a></li>
+									<li class="active">Ion Identity Molecular Networking</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="container">
+					<h2><strong>Ion Identity Networking</strong> and <strong>Feature-based Molecular Networking</strong> on the GNPS web-platform</h2>
+					The <a href="https://gnps.ucsd.edu/">GNPS</a> FBMN export function in MZmine creates all files from a feature table, that are needed to perform Feature-based Molecular 
+          Networking (FBMN) on <a href="https://gnps.ucsd.edu/">GNPS</a>. Extensive documentation is available on the 
+          <a href="https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/">GNPS documentation site.</a>.<br/>
+          
+          Ion Identity Networking (IIN) in MZmine adds a new way to connect features in molecular networks, 
+          based on MS1 analysis of ion species (different adducts and in-source fragments of the same compound).
+          Refer to <a href="https://ccms-ucsd.github.io/GNPSDocumentation/fbmn-iin">this part of the GNPS documentation</a> 
+          on how to combine IIN and FBMN within MZmine and GNPS. The latest IIN enabled MZmine version can be downloaded <a href="https://github.com/robinschmid/mzmine2/releases/tag/MZmine_2.37.1_IIN_17.7_LS">HERE</a>.<br/> 
+				</div>
+				<br/>
+			</div>
+			
+			<footer class="short" id="footer">
+			<div class="footer-copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p>© Copyright 2015. All Rights Reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			</footer>
+
+		</div>
+
+		<!-- Vendor -->
+		<script src="vendor/jquery/jquery.js"></script>
+		<script src="vendor/bootstrap/bootstrap.js"></script>
+		<script src="vendor/common/common.js"></script>
+		<script src="vendor/owlcarousel/owl.carousel.js"></script>
+		<script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="admin/assets/javascripts/theme.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+		
+		<!-- Google Analytics -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-63013892-1']);
+			_gaq.push(['_trackPageview']);
+		
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		
+	</body>
+</html>
