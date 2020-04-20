@@ -4,8 +4,8 @@
 
 		<!-- Basic -->
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>MZmine 2 - Google Summer of Code 2019</title>
-		<meta name="description" content="MZmine 2 is an open-source software for mass spectrometry data processing.">
+		<title>MZmine - Google Summer of Code 2020</title>
+		<meta name="description" content="MZmine is an open-source software for mass spectrometry data processing.">
 
 		<!-- Chrome, Firefox OS and Opera -->
 		<meta name="theme-color" content="#0088cc">
@@ -206,19 +206,17 @@
 					<img src="https://developers.google.com/open-source/gsoc/resources/downloads/GSoC-logo-horizontal-800.png" />
 					<br/><br/>
 					This page is for collecting project ideas that can be implemented during the <a href="https://summerofcode.withgoogle.com">Google Summer of Code</a>. 
-					In 2017 and 2018, MZmine and MSDK participated in GSoC under the <a href="http://wiki.openchemistry.org/GSoC_Ideas_2018">OpenChemistry</a> umbrella organization.
-					Our experience has been fantastic, and in 2019, we are applying for the first time as an independent organization.
+					In 2017, 2018, and 2019, MZmine participated in GSoC under the <a href="https://www.openchemistry.org">OpenChemistry</a> umbrella organization.
+					Our experience has been fantastic, and in 2020, we are participating as an independent organization.
 					<br/><br/>
 					<br/><br/>				
 				
-					<h1>About MSDK and MZmine</h1>
+					<h1>About MZmine</h1>
 					Mass spectrometry is an analytical technique that measures the mass of small molecules with high precision. 
 					The data coming from mass spectrometry instruments is complex and multi-dimensional. 
-					Mass spectrometry development kit (<a href="https://msdk.github.io">MSDK</a>) is a Java library of algorithms for processing such mass spectrometry data. 
-					The goals of the library are to provide a flexible data model with Java interfaces for mass-spectrometry related objects (including raw spectra, processed data sets, identification results etc.) and to integrate the existing algorithms that are currently scattered around various Java-based graphical tools. 
 					MZmine is an open-source graphical software for mass-spectrometry data processing. 
-					It is very popular among academic labs that work on <a href="https://en.wikipedia.org/wiki/Metabolomics">metabolomics</a> - the <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-395">publication</a> about MZmine 2 has received over 1100 citations to date.
-					A new version, MZmine 3, which is currently under development, is based on JavaFX for GUI and on MSDK for data processing algorithms.
+					It is very popular among academic labs that work on <a href="https://en.wikipedia.org/wiki/Metabolomics">metabolomics</a> - the <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-395">publication</a> about MZmine 2 has received over 1400 citations to date.
+					A new version, MZmine 3, which is currently under development, is based on JavaFX for its user interface.
 					<br/><br/>					
 					<br/><br/>				
 					
@@ -228,60 +226,100 @@
 					We welcome applications from all students, but especially from those interested in chemistry, biology, and/or mass spectrometry.
 					Feel free to reach out to individual mentors if there is a specific project you are interested in.
 					As part of the application process, we may ask you to work on simple, outstanding issues on our Github page, so we can get an idea about your coding skills.
-					For more information and to apply, please contact the MZmine/MSDK GSoC administrators by email: (<a href="mailto:gsoc2019@mzmine.org">gsoc2019@mzmine.org</a>).
+					For more information and to apply, please contact the MZmine GSoC administrators by email: (<a href="mailto:mzmimne@mzmine.org">mzmine@mzmine.org</a>).
 					<br/><br/>					
 					<br/><br/>				
 					
 					<h1>Project ideas</h1>
 					
-					<h2>Project: MSDK - Feature Detection</h2>
-					Brief explanation: Provide a native Java implementation of some popular LC-MS feature detection algorithms from the R world (<a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-504">centWave</a>, <a href="https://academic.oup.com/bioinformatics/article/30/18/2636/2475626">massifquant</a>, <a href="https://pubs.acs.org/doi/abs/10.1021/ac202450g">CAMERA</a>, etc.)
+					<h2>cliqueMS implementation</h2>
+					Brief explanation: Provide a native Java implementation of the <a href="https://academic.oup.com/bioinformatics/article/35/20/4089/5418951">cliqueMS</a> algorithm and corresponding GUI elements (e.g., a graph (network) visualization module) in MZmine. 
+					The grouping and annotation results from CliqueMS could then be exported for subsequent analysis in the <a href="https://ccms-ucsd.github.io/GNPSDocumentation/fbmn-iin/">ion identity molecular networking workflow</a> on the <a href="https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp">GNPS web-server</a>.
+					<br/>
+					Prerequisites: Java, JavaFX
+					<br/>
+					Mentor: Oscar Yanes (<a href="mailto:oscar.yanes@urv.cat">oscar.yanes@urv.cat</a>), Robin Schmid (<a href="mailto:robinschmid@uni-muenster.de">robinschmid@uni-muenster.de</a>)
+					<br/><br/><br />
+					
+					<h2>Automatic mass calibration support</h2>
+					Brief explanation: Develop new modules for mass spectra calibration using internal standards and statistical error detection. Add the corresponding GUI elements to MZmine. 
+					<br/>
+					Prerequisites: Java, JavaFX
+					<br/>
+					Mentor: Albert Rivas Ubach (<a href="mailto:albert.rivas.ubach@pnnl.gov">albert.rivas.ubach@pnnl.gov</a>)
+					<br/><br/><br />
+
+					<h2>Feature detection algorithms</h2>
+					Brief explanation: Provide a native Java implementation of some popular LC-MS feature detection algorithms like <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-504">centWave</a>, <a href="https://academic.oup.com/bioinformatics/article/30/18/2636/2475626">massifquant</a>, <a href="http://link.springer.com/10.1007/s10337-019-03766-1">HDBSCAN</a>, etc.
 					<br/>
 					Prerequisites: Java, preferably basic knowledge about mass spectrometry or signal processing
 					<br/>
-					Mentors: Adam Tenderholt (<a href="mailto: adam.tenderholt@veritomyx.com">adam.tenderholt@veritomyx.com</a>)
-					<br/><br/>					
+					Mentor: Xiuxia Du (<a href="mailto:xiuxia.du@uncc.edu">xiuxia.du@uncc.edu</a>)
+					<br/><br/><br />					
 					
-					<h2>Project: MSDK / MZmine - Spectral Database Search</h2>
-					Brief explanation: Develop new MSDK modules for spectral search in offline and online databases, implement algorithms for spectral matching, and add the corresponding GUI elements to MZmine.
-					<br/>
-					Prerequisites: Java, JavaFX (preferred)
-					<br/>
-					Mentor: Robin Schmid (<a href="mailto:robinschmid@uni-muenster.de">robinschmid@uni-muenster.de</a>), Louis Felix Nothias (<a href="lnothiasscaglia@ucsd.edu">lnothiasscaglia@ucsd.edu</a>)
-					<br/><br/>					
-
-					<h2>Project: MSDK - KNIME integration</h2>
-					Brief explanation: Develop an integration layer for MSDK algorithms into the workflow platform <a href="https://www.knime.com">KNIME</a>.
+					<h2>mzTab-M and mzMLb file format support</h2>
+					Brief explanation: <a href="https://pubs.acs.org/doi/10.1021/acs.analchem.8b04310">mzTab-M</a> is a new tabulated data format for metabolomics experiments. <a href="https://www.biorxiv.org/content/10.1101/2020.02.13.947218v1.full">mzMLb</a> is a new format for raw mass spectrometry datasets. Add support for mzTab-M and mzMLb formats and corresponding GUI elements to MZmine. 
+					A Java library for parsing mzTab-M already <a href="https://github.com/nilshoffmann/jmzTab-m">exists</a>. 
+					After the implementation of mzTab-M, to reduce the memory footprint, this format could be used to export all feature lists into temporary files that are only loaded into memory when needed. The goal would be to increase the maximum number of samples MZmine can process. 
+					The final idea is to change the project file structure and make use of the mzTab-M format and spectral data formats (mzML, mzMLb, [..]) to reduce the project file size and time for loading and saving. 
 					<br/>
 					Prerequisites: Java
 					<br/>
-					Mentors: Tomáš Pluskal (<a href="mailto:pluskal@wi.mit.edu">pluskal@wi.mit.edu</a>)
-					<br/><br/>					
-					
-					<h2>Project: MSDK / MZmine - mzTab-M 2.0 support</h2>
-					Brief explanation: mzTab-M is a new tabulated data format for metabolomics experiments. Add support for mzTab-M to MSDK and corresponding GUI elements to MZmine. A Java library for parsing mzTab-M already <a href="https://github.com/nilshoffmann/jmzTab-m">exists</a>.
+					Mentor: Nils Hoffmann (<a href="mailto:nils.hoffmann@isas.de">nils.hoffmann@isas.de</a>), Tomáš Pluskal (<a href="mailto:pluskal@wi.mit.edu">pluskal@wi.mit.edu</a>)
+					<br/><br/><br />					
+
+					<h2>Spectral identification</h2>
+					Brief explanation: Improve the existing support for mass spectral databases by adding more database formats (e.g., <a href="https://massbank.eu/MassBank/">Massbank Europe</a>), matching algorithms (e.g., <a href="https://pubs.acs.org/doi/10.1021/ac900954d">X-Rank</a>), fine isotope matching, etc. 
+					Add support for finding spectra using <a href="https://splash.fiehnlab.ucdavis.edu">SPLASH</a> or <a href="https://metabolomics-usi.ucsd.edu">Metabolomics Spectrum Identifier Resolver</a>. 
 					<br/>
 					Prerequisites: Java
 					<br/>
-					Mentor: Nils Hoffmann (<a href="nils.hoffmann@isas.de">nils.hoffmann@isas.de</a>)
-					<br/><br/>					
+					Mentor: Robin Schmid (<a href="mailto:robinschmid@uni-muenster.de">robinschmid@uni-muenster.de</a>)
+					<br/><br/><br />
 
-					<h2>Project: MZmine - New Visualization Modules</h2>
-					Brief explanation: Implement new, JavaFX-based visualization modules for MZmine such as 3D plot and Cloud Plot.
+					<h2>MetFrag support</h2>
+					Brief explanation: Implement a Java binding and GUI elements for the metabolite identification platform <a href="https://jcheminf.biomedcentral.com/articles/10.1186/s13321-016-0115-9">MetFrag</a>.
 					<br/>
-					Prerequisites: Java, JavaFX (preferred), experience with 3D graphics helpful but not required
+					Prerequisites: Java, JavaFX
 					<br/>
-					Mentor: Ansgar Korf (<a href="mailto:a_korf03@uni-muenster.de">a_korf03@uni-muenster.de</a>)
-					<br/><br/>
-					
-					<h2>Project: MSDK / MZmine - Correlation Analysis</h2>
-					Brief explanation: Develop new modules for correlation-based identification of related mass spectrometry signals and add the corresponding GUI elements to MZmine. 
+					Mentor: Emma Schymanski (<a href="mailto:emma.schymanski@uni.lu">emma.schymanski@uni.lu</a>)
+					<br/><br/><br />
+			
+					<h2>High-resolution and multiple-charge deisotoping</h2>
+					Brief explanation: Develop a new module for ultra-high mass resolution isotope pattern recognition and filtering. One task is to detect the isotope pattern of chemical compounds with their precise signal ratios (averaged over multiple mass spectra) to help annotate the molecular formula of this compound. 
+                    			The other task is to filter out isotope signals that originate from the same compound to improve and dereplicate downstream analysis. The challenge is to distinguish whether a signal originates from a monoisotopic compound or another isotope. In complex samples, the isotope pattern of multiple compounds and ion species might overlap. 
 					<br/>
-					Prerequisites: Java, JavaFX (preferred)
+					Prerequisites: Java
 					<br/>
-					Mentor: Dmitriy Avtonomov (<a href="dmitriy.avtonomov@gmail.com">dmitriy.avtonomov@gmail.com</a>)
-					<br/><br/>
-					
+					Mentor: Daniel Petras (<a href="mailto:dpetras@ucsd.edu">dpetras@ucsd.edu</a>), Robin Schmid (<a href="mailto:robinschmid@wwu.de">robinschmid@wwu.de</a>)
+					<br/><br/><br />
+	
+					<h2>New visualization modules</h2>
+					Brief explanation: Implement new JavaFX-based visualization modules for MZmine such as <a href="https://pubs.acs.org/doi/10.1021/ac3029745">Cloud Plot</a> and <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2117-2">Robust Volcano Plot</a>.
+					This project could also include the development of a new modular JavaFX data analysis window (e.g., using <a href="https://github.com/RobertBColton/DockFX">DockFX</a>). 
+					Such a window would combine different charts (spectra, chromatograms, statistics, [..]) and tables, and create links and controls between them.
+					<br/>
+					Prerequisites: Java, JavaFX
+					<br/>
+					Mentor: Ansgar Korf (<a href="mailto:a_korf03@uni-muenster.de">a_korf03@uni-muenster.de</a>), Robin Schmid (<a href="mailto:robinschmid@wwu.de">robinschmid@wwu.de</a>
+					<br/><br/><br />
+
+					<h2>Ion mobility data support</h2>
+					Brief explanation: Develop new modules for ion mobility data import and visualization. 
+					<br/>
+					Prerequisites: Java, JavaFX
+					<br/>
+					Mentor: Aivett Bilbao Pena (<a href="mailto:aivett.bilbao@pnnl.gov">aivett.bilbao@pnnl.gov</a>)
+					<br/><br/><br />
+
+					<h2>KNIME integration</h2>
+					Brief explanation: Develop an integration layer for MZmine algorithms into the workflow platform <a href="https://www.knime.com">KNIME</a>.
+					<br/>
+					Prerequisites: Java
+					<br/>
+					Mentor: Tomáš Pluskal (<a href="mailto:pluskal@wi.mit.edu">pluskal@wi.mit.edu</a>)
+					<br/><br/><br />					
+
 				</div>
 				<br/>
 			</div>

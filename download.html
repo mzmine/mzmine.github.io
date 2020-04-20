@@ -223,11 +223,11 @@
 						<i class="fa fa-arrow-circle-right" style="color:#0088cc;padding-left:10px;"></i>&nbsp;  (Optional) Install the required R packages using the following commands in the R console:
 					</p>
 					<p style="line-height:22px;padding-left:30px;font-style:italic;">
-						install.packages(c("Rserve", "ptw", "gplots", "baseline", "hyperSpec", "ggplot2"))<br/>
-						source("http://bioconductor.org/biocLite.R")<br/>
-						biocLite("xcms")<br/>
-						biocLite("CAMERA")<br/>
-						biocLite("PROcess")<br/>
+						install.packages(c("Rserve", "ptw", "gplots", "baseline", "hyperSpec", "ggplot2","boot"))<br/>
+						if (!requireNamespace("BiocManager", quietly = TRUE))<br/>
+  							install.packages("BiocManager")<br/>
+						BiocManager::install()<br/>
+						BiocManager::install(c("xcms", "CAMERA","PROcess"))<br/>
 					</p>
 					<h5 style="padding-top:20px;">MZmine 2 Installation</h5>
 					<p style="line-height: 30px;">
