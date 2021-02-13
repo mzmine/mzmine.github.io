@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- Basic -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>MZmine - Google Summer of Code 2021</title>
+		<meta name="description" content="MZmine is an open-source software for mass spectrometry data processing.">
+
+		<!-- Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="#0088cc">
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#0088cc">
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="favicon.ico" />
+		
+		<!-- Web Fonts  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+		
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css" media="screen">
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css" media="screen">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" media="screen">
+		
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css" />
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-animate.css" />
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="css/skins/default.css" />
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+		
+		<!--[if IE]>
+			<link rel="stylesheet" href="css/ie.css">
+		<![endif]-->
+
+		<!--[if lte IE 8]>
+			<script src="vendor/respond/respond.js"></script>
+			<script src="vendor/excanvas/excanvas.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<div class="body">
+			<header id="header">
+				<div class="container">
+					<h1 class="logo">
+						<a href="/">
+							<img alt="QC" width="427" height="99" class="logo-normal" data-sticky-width="237" data-sticky-height="55" src="img/logo.png">
+							<img alt="QC" width="237" height="55" class="logo-sticky" src="img/logo.png">
+						</a>
+					</h1>
+					<button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
+						<i class="fa fa-bars"></i>
+					</button>
+				</div>
+				<div class="navbar-collapse nav-main-collapse collapse">
+					<div class="container">
+						<nav class="nav-main mega-menu">
+							<ul class="nav nav-pills nav-main" id="mainMenu">
+								<li>
+									<a href="/">Home</a>
+								</li>
+								<li class="dropdown mega-menu-item mega-menu-fullwidth">
+									<a  class="dropdown-toggle" href="features.html">
+										Features
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<div class="mega-menu-content">
+												<div class="row">
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">General Features</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#FileFormats">Raw data file formats</a></li>
+																	<li><a href="features.html#ImportExport">Import and Export</a></li>
+																	<li><a href="features.html#Batch">Batch Processing</a></li>
+																</ul>
+																<br/>
+																<span class="mega-menu-sub-title">Raw Data Methods</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#RawFiltering">Filtering & Smoothing</a></li>
+																	<li><a href="features.html#RawDetection">Peak Detection</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Peak List Methods</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#GapFilling">Gap Filling</a></li>
+																	<li><a href="features.html#Isotopes">Isotope Detection</a></li>
+																	<li><a href="features.html#Filtering">Filtering</a></li>
+																	<li><a href="features.html#Alignment">Alignment</a></li>
+																	<li><a href="features.html#Normalization">Normalization</a></li>
+																	<li><a href="features.html#Identification">Identification</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Statistical Analysis</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#CV">CV Plot</a></li>
+																	<li><a href="features.html#Logratio">Logratio Analysis</a></li>
+																	<li><a href="features.html#PCA">Principal Component Analysis (PCA)</a></li>
+																	<li><a href="features.html#CDA">Curvilinear Distant Analysis (CDA)</a></li>
+																	<li><a href="features.html#SammonsProjection">Sammon's Projection</a></li>
+																	<li><a href="features.html#Clustering">Clustering</a></li>
+																	<li><a href="features.html#Heatmap">Heat Map Plot</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Visualization</span>
+																<ul class="sub-menu">
+																	<li><a href="features.html#TIC_XIC">TIC/XIC Visualizer</a></li>
+																	<li><a href="features.html#Spectra">Spectra Visualizer</a></li>
+																	<li><a href="features.html#IDA">IDA Visualizer</a></li>
+																	<li><a href="features.html#2D">2D Visualizer</a></li>
+																	<li><a href="features.html#3D">3D Visualizer</a></li>
+																	<li><a href="features.html#NeutralLoss">Neutral Loss Visualizer</a></li>
+																	<li><a href="features.html#Scatter">Scatter Plot</a></li>
+																	<li><a href="features.html#Histogram">Histogram Plot</a></li>
+																	<li><a href="features.html#PeakIntensity">Peak Intensity Plot</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>								
+								<li class="dropdown">
+									<a class="dropdown-toggle" href="download.html">
+										Download
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="download.html">Download</a></li>
+										<li><a href="changelog.html">Changelog</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="development.html">Development</a>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" href="support.html">
+										Support
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="support.html">Support</a></li>
+										<li><a href="documentation.html">Documentation</a></li>
+										<li><a href="support.html#Issues">Issues</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="contributors.html">Contributors</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<div role="main" class="main">
+
+				
+				<section class="page-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="breadcrumb">
+									<li><a href="/">Home</a></li>
+									<li class="active">Google Summer of Code</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="container">
+					<img src="https://developers.google.com/open-source/gsoc/resources/downloads/GSoC-logo-horizontal-800.png" />
+					<br/><br/>
+					This page is for collecting project ideas that can be implemented during the <a href="https://summerofcode.withgoogle.com">Google Summer of Code</a>. 
+					In 2017, 2018, and 2019, MZmine participated in GSoC under the <a href="https://www.openchemistry.org">OpenChemistry</a> umbrella organization.
+					Our experience has been fantastic, and in 2020 we were accepted as an independent organization. We hope to join GSoC in 2021 again.
+					<br/><br/>
+					<br/><br/>				
+				
+					<h1>About MZmine</h1>
+					Mass spectrometry is an analytical technique that measures the mass of small molecules with high precision. 
+					The data coming from mass spectrometry instruments is complex and multi-dimensional. 
+					MZmine is an open-source graphical software for mass-spectrometry data processing. 
+					It is very popular among academic labs that work on <a href="https://en.wikipedia.org/wiki/Metabolomics">metabolomics</a> - the <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-395">publication</a> about MZmine 2 has received over 1400 citations to date.
+					A new version, MZmine 3, which is currently under development, is based on JavaFX for its user interface.
+					<br/><br/>					
+					<br/><br/>				
+					
+					<h1>For students - how to apply</h1>
+					Please check out Google’s <a href="https://developers.google.com/open-source/gsoc/faq#what_are_the_eligibility_requirements_for_participation">FAQ</a> and see if you’re eligible for the GSoC. 
+					Also make careful note of the <a href="https://developers.google.com/open-source/gsoc/timeline">GSoC timeline</a> in your calendar.
+					We welcome applications from all students, but especially from those interested in chemistry, biology, and/or mass spectrometry.
+					Feel free to reach out to individual mentors if there is a specific project you are interested in.
+					As part of the application process, we may ask you to work on simple, outstanding issues on our Github page, so we can get an idea about your coding skills.
+					For more information and to apply, please contact the MZmine GSoC administrators by email: (<a href="mailto:gsoc@mzmine.org">gsoc@mzmine.org</a>).
+					<br/><br/>					
+					<br/><br/>				
+					
+					<h1>Project ideas</h1>
+					
+					<h2>Colision cross section database support</h2>
+					Brief explanation: Add support for searching public colision cross section databases using ion mobility mass spectrometry measurements.
+					<br/>
+					Prerequisites: Java
+					<br/><br/><br />
+
+					<h2>MetFrag support</h2>
+					Brief explanation: Implement a Java binding and GUI elements for the metabolite identification platform <a href="https://jcheminf.biomedcentral.com/articles/10.1186/s13321-016-0115-9">MetFrag</a>.
+					<br/>
+					Prerequisites: Java, JavaFX
+					<br/><br/><br />
+			
+					<h2>High-resolution and multiple-charge deisotoping</h2>
+					Brief explanation: Develop a new module for ultra-high mass resolution isotope pattern recognition and filtering. One task is to detect the isotope pattern of chemical compounds with their precise signal ratios (averaged over multiple mass spectra) to help annotate the molecular formula of this compound. 
+                    			The other task is to filter out isotope signals that originate from the same compound to improve and dereplicate downstream analysis. The challenge is to distinguish whether a signal originates from a monoisotopic compound or another isotope. In complex samples, the isotope pattern of multiple compounds and ion species might overlap. 
+					<br/>
+					Prerequisites: Java
+					<br/><br/><br />
+	
+					<h2>New visualization modules</h2>
+					Brief explanation: Implement new JavaFX-based visualization modules for MZmine such as <a href="https://pubs.acs.org/doi/10.1021/ac3029745">Cloud Plot</a> and <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2117-2">Robust Volcano Plot</a>.
+					<br/>
+					Prerequisites: Java, JavaFX
+					<br/><br/><br />
+		
+				</div>
+				<br/>
+			</div>
+			
+			<footer class="short" id="footer">
+			<div class="footer-copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p>© Copyright 2015. All Rights Reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			</footer>
+
+		</div>
+
+		<!-- Vendor -->
+		<script src="vendor/jquery/jquery.js"></script>
+		<script src="vendor/bootstrap/bootstrap.js"></script>
+		<script src="vendor/common/common.js"></script>
+		<script src="vendor/owlcarousel/owl.carousel.js"></script>
+		<script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="admin/assets/javascripts/theme.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+		
+		<!-- Google Analytics -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-63013892-1']);
+			_gaq.push(['_trackPageview']);
+		
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		
+	</body>
+</html>
