@@ -4,8 +4,8 @@
 
 		<!-- Basic -->
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>MZmine 2 - Download</title>
-		<meta name="description" content="MZmine 2 is an open-source software for mass spectrometry data processing.">
+		<title>MZmine 3 - Download</title>
+		<meta name="description" content="MZmine 3 is an open-source software for mass spectrometry data processing.">
 
 		<!-- Chrome, Firefox OS and Opera -->
 		<meta name="theme-color" content="#0088cc">
@@ -202,14 +202,16 @@
 				</section>
 
 				<div class="container">
-					<h2>Download <strong>MZmine 2</strong></h2>
-					MZmine 2 can be downloaded <a href="https://github.com/mzmine/mzmine2/releases">here</a>.
+					<h2>Download <strong>MZmine 3</strong></h2>
+					The latest stable MZmine 3 release can be downloaded <a href="https://github.com/mzmine/mzmine3/releases/tag/v3.0.0-beta">here</a>.
+					A list of all releases, also containing nightly builds can be found <a href="https://github.com/mzmine/mzmine3/releases/">here</a>.
 					<br/><br/>
 					For details about the new features in each release, please see the <a href="changelog.html">change log</a>.
 					<br/><br/>
 					
 					<h2>Recommended <strong>system requirements</strong></h2>
-					MZmine requires <a href="https://java.com/en/download/manual.jsp" target="_blank">Java SE runtime (JRE) version 1.7 or later</a>. We highly recommend installing the 64-bit version if you ar running a 64-bit operating system.<br/><br/>
+					MZmine 3 is a modern Java software that is packaged with its own runtime. Therefore, it is <strong>not</strong> need to install Java on the target system. Older releases of MZmine 2 require Java 8 or higher for 64-bit.
+					<br/><br/>
 					<i class="fa fa-check-circle" style="color:#0088cc;padding-left:10px;"></i>&nbsp; 64-bit CPU with 4 or more cores<br/>
 					<i class="fa fa-check-circle" style="color:#0088cc;padding-left:10px;padding-top:14px;"></i>&nbsp; 4 GB RAM (The more the better)<br/>
 					<br/>
@@ -229,11 +231,9 @@
 						BiocManager::install()<br/>
 						BiocManager::install(c("xcms", "CAMERA","PROcess"))<br/>
 					</p>
-					<h5 style="padding-top:20px;">MZmine 2 Installation</h5>
+					<h5 style="padding-top:20px;">MZmine 3 Installation</h5>
 					<p style="line-height: 30px;">
-						<i class="fa fa-arrow-circle-right" style="color:#0088cc;padding-left:10px;"></i>&nbsp; Download the latest MZmine version from <a href="https://github.com/mzmine/mzmine2/releases" target="_blank">here</a> and unpack it to a folder of your choice.<br/>
-						<i class="fa fa-arrow-circle-right" style="color:#0088cc;padding-left:10px;"></i>&nbsp; (Optional) Edit the start-up script in a text editor to adjust the below
-						parameters.<br/>
+						<i class="fa fa-arrow-circle-right" style="color:#0088cc;padding-left:10px;"></i>&nbsp; Download the latest MZmine version from <a href="https://github.com/mzmine/mzmine3/releases" target="_blank">here</a>. Installers and portable versions are provided for each system.<br/>
 					</p>
 					
 					<div class="col-md-3" style="line-height:25px;padding-left:30px;">
@@ -268,12 +268,12 @@
 					An example MZmine project containing both raw data and processed peak lists can be downloaded <a href="https://github.com/mzmine/sample_data/releases/download/v2.39/sample-2.39.mzmine">here (~400 MB)</a>. This data set comes from a <a href="https://doi.org/10.1039/B908784B">fission yeast metabolomic analysis</a>.<br/><br/><br/>
 					
 					<h2>Source <strong>Code</strong></h2>
-					The source code for MZmine 2 s available from <a href="https://github.com/mzmine/mzmine2" target="_blank">GitHub repository</a>. For more information about MZmine development please see the <a href="development.html">development</a> page.<br/><br/><br/>
+					The source code for MZmine 3 s available from <a href="https://github.com/mzmine/mzmine3" target="_blank">GitHub repository</a>. For more information about MZmine development please see the <a href="development.html">development</a> page.<br/><br/><br/>
 					
 					<h2>Old <strong>Versions</strong></h2>
 					Please note that previous versions of MZmine are unsupported. They are however still available for download.<br/>
-					<p style="line-height:30px;padding-left:30px;">
-						MZmine 2<img src="img/blank.png" width="109" height="1" alt=""><a href="http://sourceforge.net/projects/mzmine/files/mzmine2/" target="_blank">v.1.90 to v.2.13</a> and <a href="https://github.com/mzmine/mzmine2/releases" target="_blank">v.2.14 to current</a><br/>
+					<p style="line-height:30px;padding-left:30px;">  
+						MZmine 2<img src="img/blank.png" width="109" height="1" alt=""><a href="http://sourceforge.net/projects/mzmine/files/mzmine2/" target="_blank">v.1.90 to v.2.13</a> and <a href="https://github.com/mzmine/mzmine2/releases" target="_blank">v.2.14 to v.2.53</a><br/>
 						MZmine 1<img src="img/blank.png" width="109" height="1" alt=""><a href="http://sourceforge.net/projects/mzmine/files/old%20mzmine1/" target="_blank">v.0.42 to v.0.60</a>
 					</p>
 				</div>
@@ -285,7 +285,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<p>© Copyright 2015. All Rights Reserved.</p>
+							<p>© Copyright 2022. All Rights Reserved.</p>
 						</div>
 					</div>
 				</div>
