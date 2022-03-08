@@ -250,16 +250,46 @@
 					Possible mentor: <a href="mailto:steffen.heuckeroth@uni-muenster.de">Steffen Heuckeroth</a>
 					<br/><br/><br />
 					
-					<h2>MetFrag support</h2>
+					
+					<h2>Mass Spectrometry Query Language Integration</h2>
+					Brief explanation: Develop support for the Mass Spectrometry Query Language 
+					(<a href="https://mwang87.github.io/MassQueryLanguage_Documentation">MassQL</a>) in MZmine. 
+					MassQL is a simplified way for users to query for signals and patterns in complex mass spectrometry 
+					data across millions of mass spectra. In the first step, the MassQL web API will parse queries into 
+					json representations to filter and visualize mass spectrometry data in MZmine. In a second step, a 
+					java library should implement a parser and engine to handle MassQL queries and drive further development 
+					in MZmine.
+					<br/>
+					Expected project size: 200 hour<br/>
+					Difficulty: easy<br/>
+					Prerequisites: Java, JavaFX<br/>
+					Possible mentor: <a href="mailto:rschmid1789@gmail.com">Robin Schmid</a>
+					<br/><br/><br />
+
+
+					<h2>Interactive Molecular Networking Visualizer</h2>
+					Brief explanation: Visualize mass spectrometry data as a graph to enrich and propagate metadata and annotations throughout networks of (bio-)chemical information. 
+					<a href="https://www.nature.com/articles/s41592-020-0933-6">Molecular Networking</a> as a tool to link mass spectrometric patterns drives the elucidation of novel 
+					natural products. A visualizer in MZmine will be a core visualization that links to other visualization and analysis options. After implementation of a networking 
+					visualizer, the approach can be extended to other mapping algorithms like t-SNE.  
+					<br/>
+					Expected project size: 240 hour<br/>
+					Difficulty: medium<br/>
+					Prerequisites: JavaFX<br/>
+					Possible mentor: <a href="mailto:rschmid1789@gmail.com">Robin Schmid</a>
+					<br/><br/><br />
+
+
+					<!-- <h2>MetFrag support</h2>
 					Brief explanation: Implement a Java binding and GUI elements for the metabolite identification platform <a href="https://jcheminf.biomedcentral.com/articles/10.1186/s13321-016-0115-9">MetFrag</a>. MetFrag performs in silico fragmentation of molecular structures and matches the predicted fragments to observed signals in mass spectra. The MetFrag platform has a public API, which makes it relatively easy to implement in MZmine.
 					<br/>
 					Expected project size: 175 hour<br/>
 					Difficulty: easy<br/>
 					Prerequisites: Java, JavaFX<br/>
 					Possible mentor: <a href="mailto:plusik@gmail.com">Tomas Pluskal</a>
-					<br/><br/><br />
+					<br/><br/><br /> -->
 			
-					<h2>High-resolution and multiple-charge deisotoping</h2>
+					<!-- <h2>High-resolution and multiple-charge deisotoping</h2>
 					Brief explanation: Develop a new module for ultra-high mass resolution isotope pattern recognition and filtering. One task is to detect the isotope pattern of chemical compounds with their precise signal ratios (averaged over multiple mass spectra) to help annotate the molecular formula of this compound. 
                     			The other task is to filter out isotope signals that originate from the same compound to improve and dereplicate downstream analysis. The challenge is to distinguish whether a signal originates from a monoisotopic compound or another isotope. In complex samples, the isotope pattern of multiple compounds and ion species might overlap. 
 					<br/>
@@ -267,7 +297,7 @@
 					Difficulty: medium<br/>
 					Prerequisites: Java, basic chemistry<br/>
 					Possible mentor: <a href="mailto:rschmid1789@gmail.com">Robin Schmid</a>
-					<br/><br/><br />
+					<br/><br/><br /> -->
 	
 					<h2>New visualization modules</h2>
 					Brief explanation: Implement new JavaFX-based visualization modules for MZmine such as <a href="https://pubs.acs.org/doi/10.1021/ac3029745">Cloud Plot</a> and <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2117-2">Robust Volcano Plot</a>. This project requires active use of JavaFX and chart plotting libraries - we mostly use <a href="https://github.com/jfree/jfreechart">JFreeChart</a>.
